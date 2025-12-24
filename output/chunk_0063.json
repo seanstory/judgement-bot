@@ -1,0 +1,17 @@
+{
+  "category": "Heroes and Models",
+  "subcategory": "",
+  "title": "Step 5: Resurrect Hero Models",
+  "text": "Place your Hero models (that were killed in the previous round) adjacent to your Effigy.\n\n- y Return with -5 health than their maximum health.\n\n- y Have -1AP during the round in which they resurrect.\n\n- y Can Buy Magical Artefacts without spending 1AP during their activation (while adjacent to their Effigy).\n\nIf there are no unoccupied hexes adjacent to your Effigy, Heroes cannot resurrect.",
+  "page_number": 33,
+  "keywords": [
+    "If",
+    "Can Buy Magical Artefacts",
+    "Effigy",
+    "Return",
+    "Have",
+    "Heroes",
+    "Place",
+    "Hero"
+  ]
+}

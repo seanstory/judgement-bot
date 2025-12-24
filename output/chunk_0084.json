@@ -1,0 +1,19 @@
+{
+  "category": "Combat and Actions",
+  "subcategory": "",
+  "title": "attack type",
+  "text": "There are 3 types of attacks:\n\nMelee (MEL), Ranged (RNG), or Magic (MAG).\n\nMelee (MEL) attacks can only be performed if:\n\n- y The attacking model has line-of-sight to its target (see Line-of-Sight pg.52).\n\n- y The attacking model is engaging an enemy model that is within reach of a melee weapon of the attacking model.\n\nNote: Melee attacks with greater than Reach(1) only provide the extended Reach during the owning model's activation. Out of the model's activation, the attack has Reach(1).",
+  "page_number": 40,
+  "keywords": [
+    "Line",
+    "MAG",
+    "MEL",
+    "Magic",
+    "Melee",
+    "Note",
+    "Out",
+    "RNG",
+    "Ranged",
+    "Reach"
+  ]
+}

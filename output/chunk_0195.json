@@ -1,0 +1,19 @@
+{
+  "category": "Monsters",
+  "subcategory": "",
+  "title": "MONSTERS",
+  "text": "Battlefield maps have 1 or more Monster Pits in clearly marked hexes. Monsters have their own cards which describe how they function . Monsters count as enemy models to all Heroes, Summoned, and Effigy models.\n\nMonsters are ranked from Tier 1-3, represented with 'T(X)' on their cards. Each map details which Monster can be used on each spawning pit. When there is a need to spawn a random Monster refer to the map to determine which Monster tiers are possible from that spawning pit. Pool all the Monsters from those tiers and randomise between those Monsters equally.",
+  "page_number": 72,
+  "keywords": [
+    "Battlefield",
+    "Each",
+    "Effigy",
+    "Heroes",
+    "Monster",
+    "Monster Pits",
+    "Monsters",
+    "Pool",
+    "Summoned",
+    "Tier"
+  ]
+}

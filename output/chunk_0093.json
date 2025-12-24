@@ -1,0 +1,16 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "Step 1: BASE CALCULATION",
+  "text": "Calculate the Melee (MEL) of the attacker vs the Agility (AGI) of the target.\n\nGo through the list and add the positive modifiers that apply to the attacking Hero.",
+  "page_number": 41,
+  "keywords": [
+    "Go",
+    "Calculate",
+    "Agility",
+    "Melee",
+    "AGI",
+    "MEL",
+    "Hero"
+  ]
+}

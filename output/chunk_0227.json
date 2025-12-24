@@ -1,0 +1,19 @@
+{
+  "category": "Heroes and Models",
+  "subcategory": "",
+  "title": "A Summoned model:",
+  "text": "- y Does not deploy at the start of the game. It must be brought into play during an Activation Phase by its corresponding Master.\n\n- y Summoned models can only perform these listed Actions: Active Abilities, Advance, Basic Attack, Charge, Stand Up. Please refer to page 36 for full explanations of these Actions.\n\n- y Can be activated during any point of its Master's activation, along with any other models that were Summoned by the same Master (each Summoned model has its own number of AP listed on its card that it can spend, and does not use the Master's AP). When activating a Summoned model, you must complete all of their actions before the Summoner can take any further actions.\n\n- y Cannot have Souls Bound to them. If a Summoned model inflicts the killing blow on an enemy Hero, their Master harvests the enemy Hero's Soul and gains the level.\n\n- y Cannot collect the bounty of a slain Monster. If a Summoned model inflicts the killing blow on a Monster, their Master will gain a level.\n\n- y Do not give Souls or levels to enemy Heroes when they are killed (unless stated on the Summoned model's card).\n\n- y Cannot be equipped with Magical Artefacts.\n\n- y A summoned model's activation is considered to end simultaneously with the end of the Master's activation. A summoned model that finishes its actions as part of the Master's activation does not technically end its activation until the Master's activation ends. If the Master has multiple summoned models in play, for evaluating Monster attacks for model's ending their activation next\n\nto a Monster, the Monster will only attack once, targeting the eligible model with the highest health, randomizing to break ties.\n\n- y The Master can resummon a model that died during it's Master's activation but it cannot activate if it had already activated that same turn. This does not apply to Summoned models with the Skeleton Horde rule.",
+  "page_number": 82,
+  "keywords": [
+    "AP",
+    "Actions",
+    "Activation Phase",
+    "Active Abilities",
+    "Advance",
+    "Basic Attack",
+    "Can",
+    "Cannot",
+    "Charge",
+    "Do"
+  ]
+}

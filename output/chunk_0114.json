@@ -1,0 +1,19 @@
+{
+  "category": "Combat and Actions",
+  "subcategory": "",
+  "title": "Disengaging From Combat",
+  "text": "When your model is within reach of an enemy model's Melee Attack weapon it is engaged. If your model moves away by using an Advance or Effigy Recall , they are disengaging. The enemy model can then perform a Parting Blow.\n\nNote: Movement resulting from a Push or a Place does not trigger a Parting Blow.",
+  "page_number": 47,
+  "keywords": [
+    "Advance",
+    "Effigy Recall",
+    "If",
+    "Melee Attack",
+    "Movement",
+    "Note",
+    "Parting Blow",
+    "Place",
+    "Push",
+    "The"
+  ]
+}

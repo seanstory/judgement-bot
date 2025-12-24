@@ -1,0 +1,17 @@
+{
+  "category": "Gods and Effigies",
+  "subcategory": "",
+  "title": "An Effigy's health is determined by the game mode:",
+  "text": "Skirmish 3v3 = 16 health Battle 5v5 = 20 health\n\n- y Reduced by 4 each time a Soul becomes Bound to an enemy Hero (the damage is only permanent if the Soul is subsequently Banked ).\n\n- y Increased by 4 each time an enemyBound Soul becomes unbound and/or lost.",
+  "page_number": 18,
+  "keywords": [
+    "Battle",
+    "Banked",
+    "Skirmish",
+    "Increased",
+    "Reduced",
+    "Soul",
+    "Hero",
+    "Bound"
+  ]
+}

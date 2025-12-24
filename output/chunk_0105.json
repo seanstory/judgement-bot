@@ -1,0 +1,19 @@
+{
+  "category": "Game Phases",
+  "subcategory": "",
+  "title": "Phase 1:",
+  "text": "- y Trigger any ability, or effect, that relies on a Hero reaching zero health.\n\n- y If they are still on zero health they die and are removed from the battlefield. If they are not on zero health skip to step 6.\n\n- y Their Soul is automatically harvested by the Hero that caused the final damage point (see ' Soul Harvesting ' pg.76).\n\n- y Any additional Souls that were Bound to the dead Hero are immediately removed from the game and the opposing Effigy gains back that health.\n\n- y Any Tokens that are on that Hero can now be removed from the game.\n\nNote: All Tokens and other effects that the dead Hero has in play still remain in play (for example, Sir Marcus' wall or Haksa's Idols).",
+  "page_number": 45,
+  "keywords": [
+    "Any",
+    "If",
+    "Bound",
+    "Effigy",
+    "Any Tokens",
+    "All Tokens",
+    "Haksa",
+    "Note",
+    "Idols",
+    "Hero"
+  ]
+}

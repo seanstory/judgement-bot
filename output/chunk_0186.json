@@ -1,0 +1,19 @@
+{
+  "category": "Tokens and Conditions",
+  "subcategory": "",
+  "title": "Soul Harvest:",
+  "text": "- y When a model with Soulless kills an enemy Hero model, it does not harvest its Soul. The Soul binds to the nearest eligible (noncursed) friendly Hero model to this model (active player chooses if\n\nequidistant). If there is no eligible Hero, the Effigy of the Soulless model gains a Banked Soul.\n\n- y If a model with Soulless kills another Soulless model, the Effigy of the attacking model gains a Banked Soul.\n\nA model with Soulless can execute a Soul Harvest for 1AP with the following rules:\n\n- y Only other Soulless models Assist or Hinder. NonSoulless models do not Assist or Hinder Soulless models attempting a Soul Harvest. The harvested Soul is destroyed.\n\n- y This model gains a level and its Warband gains 1 Fate.\n\n- y This model heals for 3 health, or target enemy model within 3 hexes of this model takes 3 True Damage. This attempt can only be made once per Hero activation.\n\nNote: Unbound Souls do not move towards models with Soulless during the Communion Phase.\n\nContesting and Controlling Shrines: Soulless models cannot contest Shrines but they can control shrines as per the normal rules with the following amendment:\n\n- Fate is not added to the controlling player's Fate pool; however, 1 Fate is removed from the opponent's Fate pool after Fate is generated but before the option the player has to damage one of their heroes for +1 Fate in Step 3 of the Communion Phase.",
+  "page_number": 68,
+  "keywords": [
+    "Assist",
+    "Banked Soul",
+    "Communion Phase",
+    "Contesting",
+    "Controlling Shrines",
+    "Effigy",
+    "Fate",
+    "Hero",
+    "Hinder",
+    "Hinder Soulless"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "category": "Terrain and Maps",
+  "subcategory": "",
+  "title": "Moving Over a Wall",
+  "text": "A wall has height 1 and provides cover unless otherwise stated.\n\nImpassable: Any wall feature that is the same height as (or taller than) a model is impassable to that model.\n\nPassable Advance: When a model Advances over a wall hex it must have enough MOV to clear the wall in the single Advance . A model cannot end an Advance on a wall hex.\n\nPassable Charge: Models cannot Charge through a wall hex unless they have the Pathfinder or Fly ability and must clear the wall with the Charge move.",
+  "page_number": 51,
+  "keywords": [
+    "Advance",
+    "Advances",
+    "Any",
+    "Charge",
+    "Fly",
+    "Impassable",
+    "MOV",
+    "Models",
+    "Passable Advance",
+    "Passable Charge"
+  ]
+}

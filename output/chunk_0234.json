@@ -1,0 +1,14 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "Non-Commander Death",
+  "text": "If a non-Commander Hero dies:\n\n- y They do not generate a Soul (the enemy model does not harvest a Soul).\n\n- y The enemy model that has inflicted the killing blow gains a level.",
+  "page_number": 83,
+  "keywords": [
+    "Commander Hero",
+    "If",
+    "Soul",
+    "The",
+    "They"
+  ]
+}

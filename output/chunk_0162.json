@@ -1,0 +1,16 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "Armour Piercing ( WEAPON )",
+  "text": "When this model attacks a target, the target receives -1 RES point when applying damage. Multiple sources of Armour Piercing are cumulative.\n\nsame weapon. The Dual Wield attack has a -1 attack dice penalty that is applied after all modifiers.The attack dice pool for a Dual Wield attack can never be less than 1.",
+  "page_number": 66,
+  "keywords": [
+    "Armour Piercing",
+    "Dual Wield",
+    "Multiple",
+    "RES",
+    "The",
+    "The Dual Wield",
+    "When"
+  ]
+}

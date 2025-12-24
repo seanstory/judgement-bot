@@ -1,0 +1,16 @@
+{
+  "category": "Game Phases",
+  "subcategory": "",
+  "title": "End of Activation",
+  "text": "Resolve any 'end of Hero activation' abilities or effects (example: burn and other effects).\n\nModel activations continually alternate. Therefore, the player who had the final activation this round cedes the initiative (1st activation) to their opponent next round.\n\nAbilities that can be activated during another action are called ' Interrupt s' and they are labelled as follows &lt;Ability Name&gt;( Interrupt ).",
+  "page_number": 34,
+  "keywords": [
+    "Model",
+    "Therefore",
+    "Resolve",
+    "Abilities",
+    "Ability Name",
+    "Interrupt",
+    "Hero"
+  ]
+}

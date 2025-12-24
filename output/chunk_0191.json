@@ -1,0 +1,14 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "Throw (X)",
+  "text": "This model is Placed (x) hexes away from its current location, directly away from the model executing the Throw, and then suffers the knock down condition.\n\nIf the final position of a Thrown model is on an occupied hex, then the Thrown model will be positioned in the first unoccupied hex on the trajectory it was Thrown .",
+  "page_number": 69,
+  "keywords": [
+    "If",
+    "Placed",
+    "This",
+    "Throw",
+    "Thrown"
+  ]
+}

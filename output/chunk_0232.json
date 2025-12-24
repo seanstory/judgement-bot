@@ -1,0 +1,19 @@
+{
+  "category": "Heroes and Models",
+  "subcategory": "",
+  "title": "Models in Unit Cohesion can:",
+  "text": "- y Share damage (Interrupt): When a model in a unit is damaged but not killed by an enemy Basic Attack or Active Ability, they may choose to interrupt the action. The Interrupt occurs after damage has been taken but before Combat Manoeuvres have been applied. Any amount of that damage can be dealt to any friendly models from that unit in the form of True Damage. The original model then Heals for the amount dealt to the other friendly unit models. If a model receiving damage is not the original target, they cannot be allocated more damage than their current health.\n\n- y Individually use Cleanse and Self-Heal once per Hero Activation.\n\n- y Tag along for Effigy Recalls : When the Commander Effigy Recalls , any other unit models in Unit Cohesion can be Placed adjacent to their Effigy (this does not count as an Effigy Recall for the non-Commander models).\n\n- y Spend Fate and collect a Monster Fate bounty.\n\n- y Contest and Control Shrines.\n\n- y Contribute to 'Distracted' and 'Ganging Up'.\n\n- y S oul Harvest . Souls harvested by the unit are considered to be harvested by the Commander. Therefore, the Commander has the Soul Bound to them and gains a level regardless of who makes the harvest.\n\n- y Assist Soul Harvest attempts for Heroes that are not part of the unit (maximum +2 per unit).\n\n- y Hinder Soul Harvest attempts (maximum -2 per unit).",
+  "page_number": 83,
+  "keywords": [
+    "Active Ability",
+    "Any",
+    "Assist Soul Harvest",
+    "Basic Attack",
+    "Cleanse",
+    "Combat Manoeuvres",
+    "Commander",
+    "Commander Effigy Recalls",
+    "Contest",
+    "Contribute"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "Base Calculation",
+  "text": "Subtract the target's AGI from the attacker's attribute (MEL, MAG, or RNG).\n\nEXAMPLE:\n\n(5 RNG) - (3 AGI) = 2 dice\n\nIf the result is less than 1, start with 1 die.\n\nEXAMPLE:\n\n(2 MEL) - (3 AGI) = 1 die",
+  "page_number": 100,
+  "keywords": [
+    "AGI",
+    "EXAMPLE",
+    "If",
+    "MAG",
+    "MEL",
+    "RNG",
+    "Subtract"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "'One Use Only' Magical Artefacts:",
+  "text": "Some Artefacts have abilities that can only be used once per game. After the ability has been used it can never be activated again by that player. This is true even if the Artefact is traded, or sold and repurchased.\n\nPlace: A model is Placed on a particular hex. It ignores all intervening terrain and models. If the target hex is occupied, the model cannot be Placed in that hex.\n\nRandomise: Roll a dice (usually a D6, unless specified) to decide the result.\n\nResurrect: To return a Hero that was killed in the previous round back into play. Typically the Hero is Placed adjacent to its Effigy with 5 less health and 1 less AP for this round.\n\nSpawn, respawn, resurrect and Spawning: To be Placed on the board at a specific location, thereby entering play.\n\nTarget: The recipient of an attack or ability. A model can target another model if it has LoS and is within the selected Active Ability or weapon's reach. When models use abilities that affect themselves, they are targeting themselves.\n\nTemporary Health: Models can gain temporary health from various items and abilities. Temporary health is a pool of health points a model has in addition to their base health and is tracked separately. Temporary health possesses the following attributes:\n\n- y Damage dealt to the model is marked against temporary health first.\n\n- y Temporary Health cannot be healed by any means.\n\n- y A model can still heal their base health when they are benefitting from temporary health.\n\n- y For instances when a model gains temporary health from multiple sources, the owning player\n\nmust track them separately. When a model with multiple temporary health pools takes damage, the owning player can apply the damage to any pool they choose. In this instance, damage can be spread across multiple pools as desired. Note that the multiple temporary health pools will expire independently of each other.\n\nThis Model: The phrase 'this model' always refers to the model to which the card belongs / on whose card it is written.\n\nTowards: (See Away/ Towards)\n\nTrue Damage: Damage that ignores a model's RES.\n\nWithin: When an ability refers to being within (x) hexes from a given point, simply count how many hexes to reach that point, from the current occupied hex. This can be in any direction including slalom.\n\nWithin Melee Reach: A model's melee reach is defined on their card alongside their melee weapon choices. This refers to the maximum distance in hexes they can use that weapon to engage a target model. 1 hex reach means they can only engage models adjacent to themselves.",
+  "page_number": 97,
+  "keywords": [
+    "AP",
+    "Active Ability",
+    "After",
+    "Artefact",
+    "Damage",
+    "Effigy",
+    "For",
+    "Hero",
+    "If",
+    "In"
+  ]
+}

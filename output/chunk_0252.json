@@ -1,0 +1,19 @@
+{
+  "category": "Terrain and Maps",
+  "subcategory": "",
+  "title": "5v5 MAP 2:",
+  "text": "Shrines: The Shrine awards D3 Fate to the Warband that controls it.\n\nMonsters: Randomise the Monsters before players roll off for first turn/table sides.\n\nSouls: The first Soul spawns during the Communion Phase of the 2nd round and a new one will spawn each round after that in an alternate location.\n\nA Soul will not spawn if there are already 2 or more unbound Souls on the map.\n\nCoordinates :  Forest (1,5) (1,6) (1,7) (2,6) (2,7) (2,8) (2,9) (3,8); Impassable Terrain (3,5); Forest (6,4) (6,5) (7,4) (7,5) (7,6) (8,5) (8,6) (8,7); Soul Pit (5,7); Random Monster Tier 1-3 (6,12); Smoke (6,12) (6,13) (7,12) (7,13) (7,14) (8,13) (8,14);  Treacherous Ground (8,13) (8,14); Forest (12,14) (12,15) (12,16) (13,15) (13,16) (13,17) (14,15) (14,16); Wall (13,6) (14,6) (15,6);  Random Monster Tier 1-3 (16,5); Smoke (18,3) (18,4) (19,2) (19,3) (19,4) (20,2) (20,3);  Treacherous Ground (18,4) (19,4) Soul Pit (17,9); Impassable Terrain (18,10); Centre hexes for Effigies (11,3) (11,17).",
+  "page_number": 90,
+  "keywords": [
+    "Centre",
+    "Communion Phase",
+    "Coordinates",
+    "Effigies",
+    "Fate",
+    "Forest",
+    "Impassable Terrain",
+    "Monsters",
+    "Random Monster Tier",
+    "Randomise"
+  ]
+}

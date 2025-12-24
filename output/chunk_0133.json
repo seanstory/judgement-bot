@@ -1,0 +1,11 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "Example 1",
+  "text": "If the line to determine line-of-sight runs along the border of a hex only, then line-of-sight is blocked.\n\nSimilarly below, LoS is blocked to hexes where the line runs along one of their sides.",
+  "page_number": 52,
+  "keywords": [
+    "Similarly",
+    "If"
+  ]
+}

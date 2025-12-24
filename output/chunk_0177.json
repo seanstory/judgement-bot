@@ -1,0 +1,16 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "Point Blank",
+  "text": "This model can use its RNG or MAG Basic Attacks to make attacks against adjacent enemy models even if this model is engaged in melee. The model suffers Distracted modifiers from enemy models engaging them as if they were making a melee attack, other than engagement from the target of the attack. The 'Firing Into Melee' modifier does not apply for attacks targeting an adjacent enemy model.",
+  "page_number": 67,
+  "keywords": [
+    "Basic Attacks",
+    "Distracted",
+    "Firing Into Melee",
+    "MAG",
+    "RNG",
+    "The",
+    "This"
+  ]
+}

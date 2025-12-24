@@ -1,0 +1,17 @@
+{
+  "category": "Tokens and Conditions",
+  "subcategory": "",
+  "title": "Poison",
+  "text": "A model suffering the poison condition :\n\n- y Has -1 MEL/RNG/MAG point.\n\n- y Has -1 AGI point.\n\n- y Has -1 Soul Harvest point.\n\nA model suffering the stun condition :\n\n- y Has -1AP during their activation.\n\n- y Is unable to deliver Parting Blows.",
+  "page_number": 63,
+  "keywords": [
+    "Has",
+    "Soul Harvest",
+    "RNG",
+    "MAG",
+    "Parting Blows",
+    "AGI",
+    "MEL",
+    "Is"
+  ]
+}

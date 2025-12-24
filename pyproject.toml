@@ -1,0 +1,15 @@
+[project]
+name = "judgement-bot"
+version = "0.1.0"
+description = "Board game rulebook parser for Elasticsearch ingestion"
+requires-python = ">=3.11"
+dependencies = [
+    "docling>=2.0.0",
+    "elasticsearch>=8.0.0",
+    "python-dotenv>=1.0.0",
+    "crawlee[playwright]==1.2.1"
+]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"

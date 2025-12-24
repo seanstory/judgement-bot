@@ -1,0 +1,19 @@
+{
+  "category": "Tokens and Conditions",
+  "subcategory": "",
+  "title": "Souls move:",
+  "text": "- y Incorporeally : they can move freely through other models and non-impassable terrain without penalty and vice versa.\n\nNote: Models may not end movement/Placement on a hex occupied by a Soul, and may never be forced to do so (for example, with a Push ). Likewise, Souls may not end movement on an occupied hex and must stop in the nearest adjacent hex, instead. This means that if a Soul's spawning pit is occupied by another model, then the Soul will respawn adjacent to that hex. The owner of the non-Soul model decides where the Soul will respawn. If a Soul or Monster is occupying the pit, the Soul will spawn adjacent to its pit, prioritising the hex that brings it closer to the highest number of Heroes. Randomise for multiple options.\n\n- y Around impassable terrain features, using the shortest route that is  possible.",
+  "page_number": 76,
+  "keywords": [
+    "Around",
+    "Heroes",
+    "If",
+    "Incorporeally",
+    "Likewise",
+    "Models",
+    "Monster",
+    "Note",
+    "Placement",
+    "Push"
+  ]
+}

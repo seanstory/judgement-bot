@@ -1,0 +1,15 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "Fear",
+  "text": "A model suffering the fear condition :\n\n- y Cannot use Active Abilities or any active part of Magical Artefacts they carry.\n\n- y Cannot target the model that applied fear to them in their next activation.\n\n- y Cannot perform the Soul Harvest action.\n\nUndead and Monster models are immune to fear.",
+  "page_number": 63,
+  "keywords": [
+    "Active Abilities",
+    "Cannot",
+    "Magical Artefacts",
+    "Monster",
+    "Soul Harvest",
+    "Undead"
+  ]
+}

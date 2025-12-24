@@ -1,0 +1,16 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "Small",
+  "text": "This model has a height of 1 (standard Heroes are height 2). Models can move through a hex occupied by a friendly Small model (and vice versa), during an Advance or Charge , providing they have enough movement to move past them. Small models require an additional symbol to move nonSmall models with a Push Combat Manoeuvre .\n\nSmall models treat walls and other terrain of height 1 as impassable and cannot advance over them.",
+  "page_number": 63,
+  "keywords": [
+    "Advance",
+    "Charge",
+    "Heroes",
+    "Models",
+    "Push Combat Manoeuvre",
+    "Small",
+    "This"
+  ]
+}

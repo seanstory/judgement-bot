@@ -1,0 +1,17 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "Coalesce",
+  "text": "Demons follow the resurrect rules of other Heroes and resurrect adjacent to their Effigy. However, when a demon dies, place a Coalesce Icon in that hex. The owning player has the option of resurrecting them in the hex containing their Coalesce Icon. If that hex is occupied by another model or impassable terrain, they must resurrect adjacent to their Effigy. Remove the Coalesce Icon at the start of the demon's next activation.",
+  "page_number": 85,
+  "keywords": [
+    "Coalesce Icon",
+    "Demons",
+    "Effigy",
+    "Heroes",
+    "However",
+    "If",
+    "Remove",
+    "The"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "category": "Tokens and Conditions",
+  "subcategory": "",
+  "title": "Burn",
+  "text": "A model suffering the burn condition :\n\n- y Takes 3 True Damage at the end of their current or end of their next activation (whichever occurs first), before the condition expires.\n\n- y Cannot Heal for its duration.",
+  "page_number": 62,
+  "keywords": [
+    "Cannot Heal",
+    "Takes",
+    "True Damage"
+  ]
+}

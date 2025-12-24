@@ -1,0 +1,19 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "Height:",
+  "text": "Heroes: 2 Shrines: 2 Effigies: 4 Smoke/Forest: 4 Walls: 1 Souls: 1\n\nHit: A model is considered to have been Hit when any attack dice roll targeting that model (chosen by the attacking player) results in a ( or ) appearing on the dice. If an attack roll results in all dice being blanks or ( ), the target model has not been Hit and therefore no effects are triggered that require a model to have been Hit.\n\nInterrupt: An ability or effect that pauses the general game mechanics and must be resolved before continuation.\n\nKilled/Destroyed/Die: When a Hero dies, it is considered to have been killed/ destroyed. The following two stages are applied chronologically:\n\n- y Zero Health: Trigger any abilities or effects that rely on a Hero reaching zero health.\n\n- y Death/Die: Trigger any abilities or effects that rely on a Hero dying. Remove all Tokens (including Bound Souls and effects) from the model.\n\nIn both stages, if multiple abilities or effects trigger, the active player decides the order in which they are triggered.\n\nKilling Blow: The model that inflicts the last damage point, resulting in the death of an enemy model, is considered to have dealt the killing blow.\n\nMelee: A melee involves 2 or more models where at least 1 of them is either engaging, or being engaged by, the other model.\n\nOccupied/Unoccupied Hex: A hex is considered occupied when a Shrine, Effigy, impassable terrain feature, Soul, or other models (Heroes, Monsters and Summoned ) occupy that hex. Blank hexes, Forests, Smoke, Tokens, Soul Pits, and Monster Pits are considered unoccupied for model Placement/ movement. Note that terrain movement penalties may still apply.",
+  "page_number": 97,
+  "keywords": [
+    "An",
+    "Blank",
+    "Bound Souls",
+    "Death",
+    "Destroyed",
+    "Die",
+    "Effigies",
+    "Effigy",
+    "Forest",
+    "Forests"
+  ]
+}

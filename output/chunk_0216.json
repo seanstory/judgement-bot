@@ -1,0 +1,12 @@
+{
+  "category": "Combat and Actions",
+  "subcategory": "",
+  "title": "Effigies cannot be damaged:",
+  "text": "- y Or targeted by Abilities that have a direct damage component.\n\n- y By Combat Manoeuvres that apply direct damage.",
+  "page_number": 80,
+  "keywords": [
+    "Abilities",
+    "By Combat Manoeuvres",
+    "Or"
+  ]
+}

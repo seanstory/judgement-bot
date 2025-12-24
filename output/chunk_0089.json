@@ -1,0 +1,19 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "Base Calculation:",
+  "text": "+1 die for each attack point (MEL, MAG or RNG determined by attack type) that is greater than the target model's AGI. If the outcome is equal to or lower than the\n\nSaiyin attacks Skoll using Wither Soul . Let's calculate the amount of dice rolled for this attack.\n\n(Saiyin's 7 MAG) - (Skoll's 3 AGI) = 4 base attack dice.\n\ntarget's AGI, start with 1 die.\n\nNext, apply modifiers in order from the list below (always positive first, negative second) using the relevant attack modifier:",
+  "page_number": 40,
+  "keywords": [
+    "AGI",
+    "If",
+    "Let",
+    "MAG",
+    "MEL",
+    "Next",
+    "RNG",
+    "Saiyin",
+    "Skoll",
+    "Wither Soul"
+  ]
+}

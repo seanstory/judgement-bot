@@ -1,0 +1,19 @@
+{
+  "category": "Tokens and Conditions",
+  "subcategory": "",
+  "title": "Freeze",
+  "text": "Note: Freeze is applied in Step 3 of the Order of Application of Effects and conditions after positive and negative effects have been determined.\n\n- y Has its AGI capped at 3.\n\n- y Has its MOV capped at 2.\n\n- y Has the damage from its Basic Attacks reduced by 1.\n\nNote, models with Dash are unable to increase their MOV. Models suffering the freeze condition can still move the additional hexes granted by the Charge action.",
+  "page_number": 63,
+  "keywords": [
+    "Models",
+    "Has",
+    "Freeze",
+    "MOV",
+    "Dash",
+    "Basic Attacks",
+    "Order",
+    "AGI",
+    "Note",
+    "Step"
+  ]
+}

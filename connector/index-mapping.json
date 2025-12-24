@@ -1,0 +1,33 @@
+{
+  "mappings": {
+    "properties": {
+      "_timestamp": {
+        "type": "date"
+      },
+      "url": {
+        "type": "keyword"
+      },
+      "title": {
+        "type": "semantic_text"
+      },
+      "keywords": {
+        "type": "keyword"
+      },
+      "description": {
+        "type": "semantic_text"
+      },
+      "author": {
+        "type": "keyword"
+      },
+      "depth": {
+        "type": "integer"
+      },
+      "domain": {
+        "type": "keyword"
+      },
+      "type": {
+        "type": "keyword"
+      }
+    }
+  }
+}

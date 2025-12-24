@@ -1,0 +1,19 @@
+{
+  "category": "Monsters",
+  "subcategory": "",
+  "title": "Monsters in the 3v3 Game Mode",
+  "text": "In the 3v3 game mode, Monsters will not attack Effigies under any circumstance and will ignore them during the Hunter phase of their movement.\n\nIf a Hero dies from a Monster's attack, during its owning player's turn (even if activating a different model from their Warband), the nearest eligible enemy Hero model will harvest its Soul and therefore gain a level. In any other circumstance, being killed by a Monster will not result in the dead Hero's Soul being harvested, nor any opposing Hero gaining a level from the Hero's death.\n\n'Sit yourself down, lad. There's a bunch y'kneed t' know about tha' things tha' lurkin' in tha' hidden places of Mideon, and nae many folks can tell ye half as much as I can. Aye, 'tis true that I've killed my fair-share of beasts in Athien. There ain't a Monster you've encountered tha' I haven't slain.\n\nOne creature I've learned to respect among all others in Mideon is tha' beast known as Gloom. She's a cunnin' Monster, one o' the most dangerous I've seen in these lands. There are those that are more fierce and far less fair, but none have such a need to glut themselves on tha' souls that pass through this damned place.\n\nWhen 'er territory is threatened, usually around places o' power tha' wandering souls tend to flock, she flies into a frenzy - attacking anyone who gets too close! Even when you think you've driven 'er off for good, she returns with a vengeance. If ye ask me, you should give 'er a wide berth - she might pop up again when ye least expect it.'\n\n- Brok, Dwarf Berserker.",
+  "page_number": 73,
+  "keywords": [
+    "If",
+    "Brok",
+    "In",
+    "Monsters",
+    "Even",
+    "Mideon",
+    "Gloom",
+    "Athien",
+    "Effigies",
+    "Hunter"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "category": "Heroes and Models",
+  "subcategory": "",
+  "title": "Hero Attributes",
+  "text": "Each Hero has a set of attributes listed on their Attribute Card with numbers between '0' and '10' (see below). The higher the score, the better the model is at using that attribute. Attributes with a value of '0' mean the Hero has no skill in that area, but they can be increased with the help of Magical Artefacts and other means. Attributes with no value (-), cannot be increased by any means.\n\nAttributes other than RES with at least a value of 1 can never be lower than 1 or higher than 10, even if restricted or enhanced by other means.\n\nLooking at Saiyin's Hero Attributes we can see that she is highly skilled in MAG and AGI but not so much in RES.\n\n- y MOV - The maximum number of hexes a model can move when they make an Advance .\n\n- y AGI - A model's ability to avoid enemy attacks.\n\n- y RES - A model's durability and ability to reduce damage from enemy blows. RES is capped at 2 unless stated otherwise on the target model's card.\n\n- y MEL - A measure of how skilled a model is with melee weapons.\n\n- y MAG - A measure of how skilled a model is at wielding magic powers.\n\n- y RNG -A measure of how skilled a model is with ranged weapons.\n\n- y Soul Harvest - A measure of how skilled a model is at harvesting unbound Souls.",
+  "page_number": 25,
+  "keywords": [
+    "AGI",
+    "Advance",
+    "Attribute Card",
+    "Attributes",
+    "Each Hero",
+    "Hero",
+    "Hero Attributes",
+    "Looking",
+    "MAG",
+    "MEL"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "category": "Terrain and Maps",
+  "subcategory": "",
+  "title": "(2) Blocking Terrain",
+  "text": "Terrain features such as Forests and Smoke can block line-ofsight between 2 models attempting to target each other (see Line-of-Sight below). Forest and Smoke hexes also confer Stealth to models within them. However, Forests and Smoke do not block line-of-sight to and from models that are within the terrain feature.",
+  "page_number": 50,
+  "keywords": [
+    "Forest",
+    "Forests",
+    "However",
+    "Line",
+    "Sight",
+    "Smoke",
+    "Stealth",
+    "Terrain"
+  ]
+}

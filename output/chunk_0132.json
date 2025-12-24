@@ -1,0 +1,15 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "Line-of-Sight Blockers",
+  "text": "Single-hex models/terrain: Never block line-of-sight.\n\nMulti-hex models/terrain: Do block line-of-sight if they are between and are the same height or greater than both models attempting to determine line-of-sight.\n\nWhen a model is adjacent to sight-blocking terrain, like below, you follow the line of hexes from the outside edges of the model, instead of the centre which you do for cover. Line-ofsight is blocked to the model from any model occupying a hex along the line and any hex to the side of the line where the blocking hex is in relation to the original model.",
+  "page_number": 52,
+  "keywords": [
+    "Do",
+    "Line",
+    "Multi",
+    "Never",
+    "Single",
+    "When"
+  ]
+}

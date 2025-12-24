@@ -1,0 +1,11 @@
+{
+  "category": "Tokens and Conditions",
+  "subcategory": "",
+  "title": "Deaths Caused by Conditions",
+  "text": "The model that applies a condition owns that condition for the entire time it remains in play. Therefore, if the target model dies directly from that condition (e.g. the burn condition ), the model that applied the condition has delivered the killing blow and receives the benefits of securing the kill.",
+  "page_number": 62,
+  "keywords": [
+    "The",
+    "Therefore"
+  ]
+}

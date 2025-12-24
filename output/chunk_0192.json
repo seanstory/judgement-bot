@@ -1,0 +1,11 @@
+{
+  "category": "Tokens and Conditions",
+  "subcategory": "",
+  "title": "Vulnerability ( burn )",
+  "text": "A model with Vulnerability (Burn) takes 1 extra damage from the Burn condition.",
+  "page_number": 69,
+  "keywords": [
+    "Burn",
+    "Vulnerability"
+  ]
+}

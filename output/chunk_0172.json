@@ -1,0 +1,19 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "Lesser Being",
+  "text": "This model only has 2 Action Points (AP) per activation.\n\nAt the start of the game and after deployment, you choose an enemy Hero model and declare them as this model's 'Marked Target'.\n\nFor the rest of the game, when targeting the selected model, this model gains +1 dice to their Attack dice pool (after all modifiers) for Basic Attacks only.\n\nThis model can spend 1AP during its Activation to move the Mark to another enemy Hero model. Mark Target remains on the model even when it dies and resurrects.\n\nThe Mark Target token cannot be removed by any means other than as described above.",
+  "page_number": 67,
+  "keywords": [
+    "This",
+    "Attack",
+    "Action Points",
+    "Mark",
+    "Mark Target",
+    "Basic Attacks",
+    "At",
+    "The Mark Target",
+    "For",
+    "Marked Target"
+  ]
+}

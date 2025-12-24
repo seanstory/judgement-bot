@@ -1,0 +1,19 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "Explode (X)",
+  "text": "When this model dies, enemy models adjacent to it take 'x' damage.\n\nThis model takes 1 extra damage from the burn condition .\n\nWhen a non-Monster model with Fly performs a Charge , it ignores its target, intervening models, and all terrain (including impassable) during movement. The model's final placing, after the Charge move, must be on an unoccupied hex with its Charge target within melee reach.\n\nNote: that the charging model still requires Line-of-Sight to its Charge target before the Charge move.\n\nWhen a Monster with Fly moves as part of the Hunter ability, it ignores intervening models and all terrain (including impassable) during movement. The Monster's final placing, after the Hunter ability move, must be on an unoccupied hex.",
+  "page_number": 66,
+  "keywords": [
+    "This",
+    "Fly",
+    "The",
+    "When",
+    "The Monster",
+    "Charge",
+    "Monster",
+    "Note",
+    "Line",
+    "Hunter"
+  ]
+}

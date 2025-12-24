@@ -1,0 +1,14 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "(6) Teleportation Gate",
+  "text": "Each Teleportation Gate occupies 2 hexes. One hex is impassable terrain while the porting hex is passable terrain. If a Hero occupies a porting hex it may spend 1AP to be placed on the corresponding porting hex of another Teleportation Gate. If there are no unoccupied porting hexes available, the Teleportation Gate cannot be used.",
+  "page_number": 50,
+  "keywords": [
+    "Each Teleportation Gate",
+    "Hero",
+    "If",
+    "One",
+    "Teleportation Gate"
+  ]
+}

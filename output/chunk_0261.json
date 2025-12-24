@@ -1,0 +1,19 @@
+{
+  "category": "Heroes and Models",
+  "subcategory": "",
+  "title": "Active Abilities + Basic Attack (cost on Hero cards)",
+  "text": "Cleanse (1F): remove 1 condition from activated Hero\n\nEffigy Recall (2AP): place Hero adjacent to your Effigy (Note: models will lose their Bound Souls if they end their activation in the deployment zone)\n\nSelf-Heal (1AP + 1F): heal 5 health (up to maximum)\n\nSoul Harvest (2AP)\n\nStand Up (1AP): remove 1 knock down condition\n\nTry Again (1F): re-roll the entire pool of dice",
+  "page_number": 100,
+  "keywords": [
+    "Bound Souls",
+    "Cleanse",
+    "Effigy",
+    "Heal",
+    "Hero",
+    "Hero\n\nEffigy Recall",
+    "Note",
+    "Self",
+    "Soul Harvest",
+    "Stand Up"
+  ]
+}

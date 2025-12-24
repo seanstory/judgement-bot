@@ -1,0 +1,13 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "(1) Passable",
+  "text": "Models and Tokens can move through and end a move on passable terrain, but may suffer effects from doing so, such as reduced movement or even damage.\n\nNote: a model's MOV attribute will never be less than 1, regardless of any modifiers.",
+  "page_number": 50,
+  "keywords": [
+    "MOV",
+    "Models",
+    "Note",
+    "Tokens"
+  ]
+}

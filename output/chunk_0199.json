@@ -1,0 +1,19 @@
+{
+  "category": "Game Phases",
+  "subcategory": "",
+  "title": "During a Monster's activation:",
+  "text": "- y If suffering Knock Down , the monster immediately stands up at the beginning of its activation.\n\n- y It Advances its MOV attribute directly towards the nearest enemy model. If there are multiple options, the Monster will Advance towards the model with the highest current health (randomise if 2 or more models have the same health). If there are multiple options for the Monster's Advance , the Monster's route is decided by the opposing player of the model being targeted.\n\n- y At the end of its movement it will attack the nearest eligible enemy model within reach of its weapons. If there are multiple options for the Monster's attack, the Monster will attack the Hero with the highest current health (randomise if 2 or more models have the same health). Refer to the Communion Phase section for additional details.\n\n- y If a monster with multiple weapons kills its target it will not use its remaining attacks to target another enemy.\n\n- y If a monster with multiple weapons engages an enemy in the Hunter phase and attacks, it will only ever use its melee weapons to attack that model.\n\n- y Once a monster has selected its target at the end of the Hunter movement, it will make all of its eligible attacks against that target and will not switch targets as a result of the target's health changing.\n\n- y If the target is removed from the table or otherwise becomes an ineligible target, the monster's attack action will end.",
+  "page_number": 72,
+  "keywords": [
+    "Advance",
+    "At",
+    "Communion Phase",
+    "Hero",
+    "Hunter",
+    "If",
+    "It Advances",
+    "Knock Down",
+    "MOV",
+    "Monster"
+  ]
+}

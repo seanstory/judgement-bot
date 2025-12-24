@@ -1,0 +1,17 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "Nimble",
+  "text": "This model cannot be targeted by Parting Blows.\n\nWhen a Mounted model resolves a Charge it:\n\n- y Adds +1 die to its attack pool after all modifiers.\n\n- y Inflicts +1 extra damage from its Basic Attacks .",
+  "page_number": 67,
+  "keywords": [
+    "This",
+    "When",
+    "Adds",
+    "Basic Attacks",
+    "Mounted",
+    "Parting Blows",
+    "Charge",
+    "Inflicts"
+  ]
+}

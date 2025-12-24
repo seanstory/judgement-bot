@@ -1,0 +1,15 @@
+{
+  "category": "Combat and Actions",
+  "subcategory": "",
+  "title": "Melee Modifiers",
+  "text": "Charge\n\n: +2 dice.\n\nGanging Up: +1 die per friendly model engaging target.\n\nPositive Abilities: abilities that add dice to the pool\n\nDistracted: -1 die for each enemy model engaging attacker.\n\nTerrain: see Terrain section pg.50\n\nNegative Abilities: abilities that remove dice from the pool",
+  "page_number": 100,
+  "keywords": [
+    "Charge",
+    "Distracted",
+    "Ganging Up",
+    "Negative Abilities",
+    "Positive Abilities",
+    "Terrain"
+  ]
+}

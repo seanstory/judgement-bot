@@ -1,0 +1,40 @@
+## Example configuration for using the Crawlee Web Crawler connector
+##
+## This is a template - copy to your own project directory and customize
+## DO NOT commit instance-specific configurations to this repository
+
+## ------------------------------- Elasticsearch -------------------------------
+elasticsearch:
+  host: https://your-elasticsearch-cluster:443
+  api_key: your-api-key-here
+  ssl: true
+  verify_certs: true
+
+## ------------------------------- Connectors -------------------------------
+##
+## Configure your crawler instance
+connectors:
+  - connector_id: your-connector-id  # Get this after creating connector via CLI or Kibana
+    service_type: crawlee
+
+## ------------------------------- Sources ----------------------------------
+##
+## Register the Crawlee connector (required)
+sources:
+  crawlee: connectors.sources.crawlee:CrawleeDataSource
+
+## ------------------------------- Service ----------------------------------
+##
+## Service configuration (optional - these are defaults)
+service:
+  idling: 30                    # Seconds between polls for new sync jobs
+  heartbeat: 60                 # Heartbeat interval
+  max_concurrent_syncs: 1       # Number of concurrent sync jobs
+  log_level: INFO
+
+## ------------------------------- Extraction Service -----------------------
+##
+## Content extraction for binary files (optional)
+extraction_service:
+  host: http://localhost:8090
+  use_text_extraction_service: false

@@ -1,0 +1,16 @@
+{
+  "category": "Terrain and Maps",
+  "subcategory": "",
+  "title": "(5) Impassable Terrain",
+  "text": "Hexes occupied by the Effigy of your opponent, Shrines, the edge of the map and certain terrain pieces are considered 'impassable terrain'. This means other models, Tokens, or any other components may not enter the hex unless their abilities allow them to pass through or Fly over terrain. These exceptions are clearly labelled on qualified model cards.",
+  "page_number": 50,
+  "keywords": [
+    "Effigy",
+    "Fly",
+    "Hexes",
+    "Shrines",
+    "These",
+    "This",
+    "Tokens"
+  ]
+}

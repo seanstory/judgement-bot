@@ -1,0 +1,12 @@
+{
+  "category": "Tokens and Conditions",
+  "subcategory": "",
+  "title": "Stacking Multiple Conditions",
+  "text": "Only different conditions can be stacked on one target model. Duplicate conditions cannot be stacked. However, the old condition can be replaced with the new condition when a model is targeted with multiple conditions of the same type.",
+  "page_number": 62,
+  "keywords": [
+    "Duplicate",
+    "However",
+    "Only"
+  ]
+}

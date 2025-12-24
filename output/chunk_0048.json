@@ -1,0 +1,19 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "Card 1: Attribute Card",
+  "text": "- (A) This displays the Hero's race, name, and characteristics.\n\n- (B) This is where the Hero's Class (or Classes) are displayed.\n\n- (C) This circle displays the Soul Harvest attribute of the Hero.\n\n- (D) The Hero's attributes.\n\n- (E) These symbols display the Hero's god alignments.\n\n- (F) This symbol indicates the weapon's attack type.\n\n- (G) This section describes Rakkir's Basic Attack options. He has 1 Basic Attack which is called ' Dagger '; it uses the (MEL) attribute, has a cost of 1 action point (1AP), and a reach of 1 hex. The damage of the attack is measured across 3 success levels: Glancing Blow (Glance) = 2 damage, Solid Blow (Solid) = 3 damage, and Critical Blow (Crit) = 5 damage.",
+  "page_number": 26,
+  "keywords": [
+    "Basic Attack",
+    "Class",
+    "Classes",
+    "Crit",
+    "Critical Blow",
+    "Dagger",
+    "Glance",
+    "Glancing Blow",
+    "He",
+    "Hero"
+  ]
+}

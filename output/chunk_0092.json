@@ -1,0 +1,18 @@
+{
+  "category": "Combat and Actions",
+  "subcategory": "",
+  "title": "Magic Attack Modifiers:",
+  "text": "Positive Abilities: Add all dice from abilities that affect the attacking model in a positive way.\n\nFiring Into Melee: -1 die for each model (other than the attacking model) engaging or being engaged by the target.\n\nTerrain: Apply terrain modifiers (see 'Interacting with Terrain' pg.50).\n\nNegative Abilities: Subtract all dice from abilities that affect the attacking model in a negative way.\n\nIf your calculations equal 0 or less after all modifiers, then use 1 die (the attack dice pool can never go below 1).",
+  "page_number": 41,
+  "keywords": [
+    "Add",
+    "Apply",
+    "Firing Into Melee",
+    "If",
+    "Interacting",
+    "Negative Abilities",
+    "Positive Abilities",
+    "Subtract",
+    "Terrain"
+  ]
+}

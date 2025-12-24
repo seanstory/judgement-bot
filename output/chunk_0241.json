@@ -1,0 +1,19 @@
+{
+  "category": "Terrain and Maps",
+  "subcategory": "",
+  "title": "map terrain coordinates",
+  "text": "The hex columns of each map are labelled with numbers from left to right. These are used to provide coordinates for placement of the gaming elements for Judgement.\n\nRows are not labelled but the hex above where the column number appears is 'row' 1 for that column.\n\nFor example, the hex just above the number 1 is described as (1,1), the next hex above that is (1,2), and so forth. To explain further on this 3v3 (Skirmish) map, the left Soul Pit would be hex (3,5) and Gloom's Monster Pit would be (11,5).\n\nWe have provided 6 maps and the coordinates of all the elements. More maps can be found on our website, www.creaturecaster.com.",
+  "page_number": 88,
+  "keywords": [
+    "For",
+    "Gloom",
+    "Judgement",
+    "Monster Pit",
+    "More",
+    "Rows",
+    "Skirmish",
+    "Soul Pit",
+    "The",
+    "These"
+  ]
+}

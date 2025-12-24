@@ -1,0 +1,15 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "Summoner",
+  "text": "This model has the ability to bring Summoned models into play. You cannot summon the same Summoned model more than once simultaneously.\n\nTarget enemy within 2 hexes has attacks against it gain Armour Piercing (1). Expires at the start of their next activation.",
+  "page_number": 69,
+  "keywords": [
+    "This",
+    "Expires",
+    "Summoned",
+    "You",
+    "Target",
+    "Armour Piercing"
+  ]
+}

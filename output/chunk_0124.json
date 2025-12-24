@@ -1,0 +1,19 @@
+{
+  "category": "Heroes and Models",
+  "subcategory": "",
+  "title": "(4) Treacherous Ground",
+  "text": "If a model begins an Advance/Charge on a hex containing treacherous ground or passes through it during an Advance/ Charge , the model suffers a -2 MOV penalty for that action (unless it is their last hex of movement) and takes 1 Armour Piercing damage (maximum) for that action (see Armour\n\nPiercing under 'Common Innate Abilities' pg.66). When a model enters any hex containing treacherous ground - as a result of a Push , Place, or Throw - the model takes 1 Armour Piercing damage (maximum) for that action.\n\nDamage from Treacherous Ground is an Interrupt and is applied immediately when entering the hex. This may affect the Hero completing that particular action.\n\nNote, models with Pathfinder can move into treacherous ground with no MOV penalty, but they will still take the 1 Armour Piercing damage. A model with Fly executing a Charge ignore this damage as long as they do not end their movement on a Treacherous Ground hex.",
+  "page_number": 50,
+  "keywords": [
+    "Advance",
+    "Armour\n\nPiercing",
+    "Armour Piercing",
+    "Charge",
+    "Common Innate Abilities",
+    "Damage",
+    "Fly",
+    "Hero",
+    "If",
+    "Interrupt"
+  ]
+}

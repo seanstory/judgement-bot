@@ -1,0 +1,15 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "Immune (X)",
+  "text": "A model with Immune(X) cannot have that condition or effect applied to them. Note: this does not remove a preexisting condition .\n\nThis model can move through other models and non impassable terrain without penalty. Other models can move through Incorporeal models without penalty. In all cases, models must have enough movement to pass through and end their current move in an unoccupied hex.",
+  "page_number": 67,
+  "keywords": [
+    "This",
+    "Other",
+    "In",
+    "Note",
+    "Incorporeal",
+    "Immune"
+  ]
+}

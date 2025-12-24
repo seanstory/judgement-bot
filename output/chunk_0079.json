@@ -1,0 +1,19 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "These weapons aren't enough… it's time to ramp it up.",
+  "text": "Each Warband has access to a deck of Magical Artefacts which includes one of each non-Sacred, non-Monster Bounty Artefacts along with the Sacred Artefact associated with the Warband's chosen god. This deck represents the Warband's access to Artefacts through the Buy/Trade/Sell action.\n\nYour Hero must be adjacent to your Effigy to use this action. (Note that Heroes can Buy, Sell, or Trade Magical Artefacts when they collect a Monster's bounty or control a Shrine on a map's centre line, without spending an action. See 'Monster' s Bounty' pg.72 and 'Controlling the Shrine' pg. 81).\n\nAny number of Artefacts may be Purchased/Traded/Sold for the single AP. However, each Hero may only possess one offensive and one defensive Artefact at a time . Artefacts are the sole property of the Hero who purchases them. A Warband may never have 2 of the same Artefact equipped to their Heroes simultaneously.  Note, in-game effects may allow a Warband access to the opponent's artefact deck, in which case a duplicate Artefact is allowed if sourced from another deck.\n\n- y Buy Artefact: 1AP + X Fate (X = cost of the Artefact)\n\n- y Trade Artefact: 1AP + Artefact(s) equal to the Fate cost of the desired replacement Artefact (+ Fate if cost is still greater)\n\n- y Sell Artefact: 1AP + Artefact(s) being sold Your Hero can Sell their Artefact(s) for the original cost in Fate. The Fate gained is added to your Fate pool.",
+  "page_number": 37,
+  "keywords": [
+    "AP",
+    "Any",
+    "Artefact",
+    "Artefacts",
+    "Bounty",
+    "Buy",
+    "Buy Artefact",
+    "Controlling",
+    "Each Warband",
+    "Effigy"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "category": "Heroes and Models",
+  "subcategory": "",
+  "title": "Monsters Attacking Enemy Models",
+  "text": "Order of Execution: When a Monster's attack coincides with another in-game rule(s), the Monster will always resolve its attack last.\n\n- y The enemy model ends its activation within melee reach of a Monster.\n\n- y The enemy model disengages from the Monster via an Advance / Charge / Effigy Recall . The Monster will execute a Parting Blow against them.",
+  "page_number": 73,
+  "keywords": [
+    "The",
+    "When",
+    "Parting Blow",
+    "Advance",
+    "Effigy Recall",
+    "Order",
+    "The Monster",
+    "Monster",
+    "Charge",
+    "Execution"
+  ]
+}

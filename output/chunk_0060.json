@@ -1,0 +1,19 @@
+{
+  "category": "Tokens and Conditions",
+  "subcategory": "",
+  "title": "Step 2: Move Unbound Souls and then Monsters",
+  "text": "Souls that are not Bound to a Hero (i.e. Unbound) are moved X (determined by a D2 roll) hexes towards the nearest Hero excluding Heroes suffering the Cursed condition or with the Soulless rule, prioritizing the Hero with the most remaining health, if tied. Randomise if 2 or more models have the same health. If there are multiple options for the Soul's movement, the Soul's route is decided by the player of the Hero that the Soul is moving towards.\n\nMonsters that have the Hunter ability on their card Advance their MOV attribute in hexes, towards the nearest enemy model, prioritizing the model with the most remaining health, if tied. If there are multiple options for the Monster's Advance , the Monster's route is decided by the opposing player of the model being targeted. Any attack actions required by Monsters are also rolled at this time.\n\nFor multiple Souls and Monsters, randomise the order in which they move.",
+  "page_number": 32,
+  "keywords": [
+    "Advance",
+    "Any",
+    "Bound",
+    "Cursed",
+    "For",
+    "Hero",
+    "Heroes",
+    "Hunter",
+    "If",
+    "MOV"
+  ]
+}

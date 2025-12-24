@@ -1,0 +1,15 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "Commander Death",
+  "text": "If a unit Commander dies:\n\n- y All other models in the unit lose Unit Cohesion until they are back within 3 hexes of the Commander.\n\n- y The enemy model that inflicted the killing blow harvests the Commander's Soul.",
+  "page_number": 83,
+  "keywords": [
+    "All",
+    "Commander",
+    "If",
+    "Soul",
+    "The",
+    "Unit Cohesion"
+  ]
+}

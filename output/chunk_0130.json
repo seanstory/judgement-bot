@@ -1,0 +1,12 @@
+{
+  "category": "Terrain and Maps",
+  "subcategory": "",
+  "title": "LINE OF SIGHT (LoS)",
+  "text": "Line-of-sight is the ability of one model to 'see' another model. A model must have line-of-sight to another model to target that model. All Judgement models have 360 degrees of vision. Any contact with a model, physical or otherwise, is considered to be their frontside.",
+  "page_number": 52,
+  "keywords": [
+    "All Judgement",
+    "Any",
+    "Line"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "Determining Line-of-Sight",
+  "text": "Your model has line-of-sight to another model if you can draw a straight line (called a Direct Line) from any point of your model's hex to any point of that model's hex. The Direct Line must not cross or touch a line-of-sight blocker's hex.",
+  "page_number": 52,
+  "keywords": [
+    "Direct Line",
+    "The Direct Line",
+    "Your"
+  ]
+}

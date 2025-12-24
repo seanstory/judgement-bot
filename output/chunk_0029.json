@@ -1,0 +1,11 @@
+{
+  "category": "Gods and Effigies",
+  "subcategory": "",
+  "title": "Effigy health points are determined by the game mode:",
+  "text": "Skirmish 3v3 = 16 health\n\nBattle 5v5 = 20 health",
+  "page_number": 18,
+  "keywords": [
+    "Battle",
+    "Skirmish"
+  ]
+}

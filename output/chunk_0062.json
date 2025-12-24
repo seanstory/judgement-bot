@@ -1,0 +1,19 @@
+{
+  "category": "Tokens and Conditions",
+  "subcategory": "",
+  "title": "Step 4: Spawn Soul and Monster(s)",
+  "text": "Souls: Starting from round 2:\n\n- y For maps with one Soul spawning pit, a Soul spawns there.\n\n- y For maps with multiple Soul spawning pits, randomise where the 1st Soul spawns and spawn a Soul at the determined location. For subsequent rounds, spawn a Soul from the next spawning pit in a clockwise direction from the first. If the map design makes it difficult to determine clockwise rotation, randomise the spawning sequence once and follow that sequence for the rest of the game.\n\nIf there are 2 or more unbound Souls on the board at the start of Step 4, no Soul is spawned .\n\nMonsters: Monster Pits that have a Monster Respawn Token on them will spawn a Monster. Remove the Monster Respawn Token and spawn a Monster according to the available Monsters for that Pit (varies by map). Assess each remaining Monster Pit to see if the corresponding Monster is still in play. If the Monster that spawned from a Pit is no longer in play, place a Monster Respawn Token on the Monster Pit. Monster Respawn Tokens cannot be removed by Hero abilities.\n\nIf a spawning pit is occupied , the Soul/Monster will spawn adjacent to its spawning pit. The owner of the model that is occupying the pit decides the exact hex. In this case the Monster will always attack the model that is occupying its spawning pit.\n\nIf a Soul/Monster is occupying the pit , the Soul/Monster will spawn adjacent to its pit and adjacent to the most Heroes possible. Randomise if there are multiple options or no adjacent Heroes. If there are no unoccupied hexes adjacent to the spawning pit, the Soul/Monster cannot spawn.",
+  "page_number": 33,
+  "keywords": [
+    "Assess",
+    "For",
+    "Hero",
+    "Heroes",
+    "If",
+    "In",
+    "Monster",
+    "Monster Pit",
+    "Monster Pits",
+    "Monster Respawn Token"
+  ]
+}

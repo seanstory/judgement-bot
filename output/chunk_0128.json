@@ -1,0 +1,11 @@
+{
+  "category": "Terrain and Maps",
+  "subcategory": "",
+  "title": "Interacting With Multiple Terrain Types",
+  "text": "When passing through multiple different terrain features in an action, movement penalties applied to the model will not stack. The model will suffer the highest penalty to movement from the features it crosses in that action.",
+  "page_number": 51,
+  "keywords": [
+    "The",
+    "When"
+  ]
+}

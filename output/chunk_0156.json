@@ -1,0 +1,17 @@
+{
+  "category": "Tokens and Conditions",
+  "subcategory": "",
+  "title": "Markers",
+  "text": "Used to represent a condition , Combat Manoeuvre , or Ability. They are positioned on the battlefield anywhere near the model that they are affecting, but do not have a physical presence in-game. Markers with the same name, applied by the same Warband do not stack to provide a cumulative effect. If a Marker with the same name is applied on a model that already exists, the newest Marker will replace the old and ownership will change accordingly.",
+  "page_number": 64,
+  "keywords": [
+    "Ability",
+    "Combat Manoeuvre",
+    "If",
+    "Marker",
+    "Markers",
+    "They",
+    "Used",
+    "Warband"
+  ]
+}

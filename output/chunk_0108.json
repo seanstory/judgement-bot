@@ -1,0 +1,19 @@
+{
+  "category": "Combat and Actions",
+  "subcategory": "",
+  "title": "For all Combat Manoeuvres :",
+  "text": "- y A model can only purchase a single Combat Manoeuvre for each Basic Attack .\n\n- y Damage from an attack is resolved before any Combat Manoeuvre is executed.\n\n- y Models with Dual Wield cannot execute the Push Combat Manoeuvre on the second attack each attack action.\n\nNote: Some Combat Manoeuvres generate effects that apply a Token to the target. Duplicate effects cannot be stacked. However, the old effect can be replaced with the new effect when a model is targeted with multiple Combat Manoeuvres of the same type.",
+  "page_number": 46,
+  "keywords": [
+    "Basic Attack",
+    "Combat Manoeuvre",
+    "Combat Manoeuvres",
+    "Damage",
+    "Dual Wield",
+    "Duplicate",
+    "However",
+    "Models",
+    "Note",
+    "Push Combat Manoeuvre"
+  ]
+}

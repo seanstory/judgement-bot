@@ -1,0 +1,17 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "Leech (X)",
+  "text": "This model can heal 'x' health on each successful Basic Attack , per Action Point (AP) spent (not including the additional AP required for a Charge), that damages an enemy model.  A model can never heal more from a Leech attack than the damage their attack inflicted on their target. Leech can only be triggered during this model's activation and triggers at the end of Step 5 of the Attack Process.",
+  "page_number": 67,
+  "keywords": [
+    "AP",
+    "Action Point",
+    "Attack Process",
+    "Basic Attack",
+    "Charge",
+    "Leech",
+    "Step",
+    "This"
+  ]
+}

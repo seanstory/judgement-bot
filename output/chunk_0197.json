@@ -1,0 +1,19 @@
+{
+  "category": "Monsters",
+  "subcategory": "",
+  "title": "Monster Bounty",
+  "text": "This is the reward a Monster drops when they are killed. There are some Monster-specific rewards (stated on their card), but the 2 most common bounty rewards are:\n\nLevels: The Hero that dealt the killing blow to a Monster gains a level.\n\nFate: Fate bounty is listed on the front of the Monster's card, near its portrait. Fate bounty can be collected by the Hero that dealt the killing blow (must be adjacent to the Monster), or by a friendly Hero that was adjacent to the Monster at the time of its death.\n\nThe Fate is added to their Warband's Fate pool and can immediately be used along with pre-existing Fate, by the collecting Hero to Buy , Sell or Trade Magical Artefacts (as if they are adjacent to their Effigy). This occurs as an Interrupt to the current action after the damage is taken by the Monster but before Combat Manoeuvres are applied.\n\nMagical Artefacts: Some Monsters drop unique Magical Artefacts. A Warband may never have 2 of the same Artefact equipped to their Heroes simultaneously.",
+  "page_number": 72,
+  "keywords": [
+    "Artefact",
+    "Buy",
+    "Combat Manoeuvres",
+    "Effigy",
+    "Fate",
+    "Hero",
+    "Heroes",
+    "Interrupt",
+    "Levels",
+    "Magical Artefacts"
+  ]
+}

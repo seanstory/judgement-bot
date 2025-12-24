@@ -1,0 +1,17 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "effigies",
+  "text": "An Effigy's health fluctuates throughout the game, depending on the number of Souls currently Bound to enemy Heroes and/or Banked with their Effigy. When enemy Heroes harvest Souls, your Effigy loses base health. When enemy Heroes lose Bound Souls, your Effigy gains back the lost health.",
+  "page_number": 80,
+  "keywords": [
+    "An Effigy",
+    "Banked",
+    "Bound",
+    "Bound Souls",
+    "Effigy",
+    "Heroes",
+    "Souls",
+    "When"
+  ]
+}

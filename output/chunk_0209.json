@@ -1,0 +1,19 @@
+{
+  "category": "Tokens and Conditions",
+  "subcategory": "",
+  "title": "Souls can be harvested by:",
+  "text": "- y Killing a Hero in combat. The Hero that inflicted the killing blow automatically and immediately harvests the dead Hero's Soul.\n\n- y Killing a Hero with a condition or effect. The Hero that owned the condition or effect that caused the death will harvest the dead Hero's Soul, if they are eligible. Otherwise, the nearest eligible enemy Hero (to the Hero that died) will harvest the Soul. In case of multiple options, the player gaining the Soul can decide which Hero harvests the Soul. In all cases, the Hero that harvests the Soul also gains a level.\n\n- y Intentional Death : If a Hero dies during its owning player's turn (if not covered by other rules such as Heroes owning conditions ). The nearest eligible enemy Hero (to the Hero that died) will harvest the Soul. In case of multiple options the player gaining the Soul can decide which Hero harvests the Soul. In all cases the Hero that harvests the Soul also gains a level. If the model that died is Soulless, the Soul will be banked and the nearest eligible Hero will gain the level.\n\n- y Successfully rolling a Soul Harvest skill check while adjacent to an unbound Soul. (See ' Soul Harvest ' pg.37 under 'Activation Phase' pg.34).",
+  "page_number": 76,
+  "keywords": [
+    "Activation Phase",
+    "Hero",
+    "Heroes",
+    "If",
+    "In",
+    "Intentional Death",
+    "Killing",
+    "Otherwise",
+    "See",
+    "Soul"
+  ]
+}

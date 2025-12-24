@@ -1,0 +1,19 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "Gaining Levels",
+  "text": "When a Hero gains a level, their maximum health increases and they will gain health equal to the change in their max health. For example, if Rakkir currently has 10 health and reaches level 2, his max health increases by 1, going from 15 to 16. He also immediately gains 1 health, increasing from 10 to 11.\n\nHeroes also unlock their levelled abilities immediately after their current action ends.\n\nThe bonus health and powers that are unlocked at each level are detailed on the Hero's Attribute Card, and are specific to the Hero.\n\nHeroes can gain 1 level each time they:\n\n- y Kill an enemy Hero, Monster, or Summoned model (as listed on their cards).\n\n- y Successfully harvest a Soul (this does not stack with the above point of killing an enemy model).\n\nOnce gained, Heroes retain the level(s), abilities, health, and Magical Artefacts associated with that level until the end of the game (death has no permanent effect).",
+  "page_number": 29,
+  "keywords": [
+    "Attribute Card",
+    "For",
+    "He",
+    "Hero",
+    "Heroes",
+    "Kill",
+    "Magical Artefacts",
+    "Monster",
+    "Once",
+    "Rakkir"
+  ]
+}

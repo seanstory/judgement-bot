@@ -1,0 +1,17 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "Duplicate Self",
+  "text": "The next Basic Attack that targets this model, and scores a Hit, is Interrupted. Interrupt the attack after the attack dice have been chosen but before damage is resolved. That attack is ignored, and then Duplicate Self expires. Otherwise, Duplicate Self expires at the start of this model's next activation.",
+  "page_number": 66,
+  "keywords": [
+    "Basic Attack",
+    "Duplicate Self",
+    "Hit",
+    "Interrupt",
+    "Interrupted",
+    "Otherwise",
+    "That",
+    "The"
+  ]
+}

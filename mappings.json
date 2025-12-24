@@ -1,0 +1,24 @@
+{
+  "mappings": {
+    "properties": {
+      "category": {
+        "type": "semantic_text"
+      },
+      "subcategory": {
+        "type": "semantic_text"
+      },
+      "title": {
+        "type": "semantic_text"
+      },
+      "text": {
+        "type": "semantic_text"
+      },
+      "page_number": {
+        "type": "integer"
+      },
+      "keywords": {
+        "type": "keyword"
+      }
+    }
+  }
+}

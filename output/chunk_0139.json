@@ -1,0 +1,19 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "The element of surprise!",
+  "text": "This is a very popular combo move that gets your attacker to the target quickly and ends with a boosted Basic Melee Attack .\n\nThe target: must be an enemy model and must be within reach of the selected melee weapon when the Advance movement ends. Your model cannot Charge a target that they are engaging or being engaged by.\n\n1. Line of Sight: Draw a Direct Line to the intended Charge target (see Line of Sight section).\n\n2. Sidestep: Move 1 hex in any direction as the very first hex of the Charge (counts as -1 MOV).\n\n3. MOV Bonus: Your model Advances up to their normal MOV plus 2 hexes in a straight or slalom (zig-zag pattern) line.\n\n4. Melee Attack : Make a Basic Melee Attack against the Charge target at the end of the Charge .  Add +2 dice to your dice pool for the Charge attack.",
+  "page_number": 36,
+  "keywords": [
+    "Add",
+    "Advance",
+    "Advances",
+    "Basic Melee Attack",
+    "Bonus",
+    "Charge",
+    "Direct Line",
+    "Draw",
+    "Line",
+    "MOV"
+  ]
+}

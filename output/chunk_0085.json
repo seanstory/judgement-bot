@@ -1,0 +1,12 @@
+{
+  "category": "Combat and Actions",
+  "subcategory": "",
+  "title": "Ranged (RNG) and Magic (MAG) attacks can only be performed if:",
+  "text": "- y The attacking model has line-of-sight to its target (see Line-of-Sight pg.52).\n\n- y The target is within reach of the weapon/ability being used to make the attack.\n\n- y The attacking model is not engaged by an enemy model.",
+  "page_number": 40,
+  "keywords": [
+    "Line",
+    "Sight",
+    "The"
+  ]
+}

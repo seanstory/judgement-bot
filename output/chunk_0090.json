@@ -1,0 +1,19 @@
+{
+  "category": "Combat and Actions",
+  "subcategory": "",
+  "title": "Melee Attack Modifiers:",
+  "text": "Charge: +2 dice if you Charged .\n\nGanging Up: +1 die for each other friendly model that is engaging the target.\n\nPositive Abilities: Add all dice from abilities that affect the attacking model in a positive way.\n\nDistracted: -1 die for each other enemy model that is engaging the attacker. This cannot be used against Monsters.\n\nTerrain: Apply terrain modifiers (see 'Interacting with Terrain' pg.50).\n\nNegative Abilities: Subtract all dice from abilities that affect the attacking model in a negative way.",
+  "page_number": 41,
+  "keywords": [
+    "Add",
+    "Apply",
+    "Charge",
+    "Charged",
+    "Distracted",
+    "Ganging Up",
+    "Interacting",
+    "Monsters",
+    "Negative Abilities",
+    "Positive Abilities"
+  ]
+}

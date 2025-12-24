@@ -1,0 +1,19 @@
+{
+  "category": "Combat and Actions",
+  "subcategory": "",
+  "title": "Ranged Attack Modifiers:",
+  "text": "Aiming Bonus: A model may claim the aiming bonus at the beginning of their activation. This model gains a +1 die modifier for Ranged Attacks this activation. This model cannot perform an Advance, a melee Basic Attack, or Effigy Recall this activation if the aiming bonus is claimed.\n\nPositive Abilities: Add all dice from abilities that affect the attacking model in a positive way.\n\nFiring Into Melee: -1 die for each model (other than the attacking model) engaging or being engaged by the target.\n\nTerrain: Apply terrain modifiers (see 'Interacting with Terrain' pg.50).\n\nNegative Abilities: Subtract all dice from abilities that affect the attacking model in a negative way.",
+  "page_number": 41,
+  "keywords": [
+    "Add",
+    "Advance",
+    "Aiming Bonus",
+    "Apply",
+    "Basic Attack",
+    "Effigy Recall",
+    "Firing Into Melee",
+    "Interacting",
+    "Negative Abilities",
+    "Positive Abilities"
+  ]
+}

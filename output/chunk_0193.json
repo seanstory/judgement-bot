@@ -1,0 +1,19 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "Ward ( Interrupt )",
+  "text": "At the start of the game, after deployment, a friendly nonDefender Hero model is chosen as this model's Ward . The chosen model remains this model's Ward for the entire game.\n\nThis model can be Placed 1 hex towards its Ward at the start of this model's activation.\n\nWhen this model is adjacent to its Ward :\n\n- y And its Ward is hit by a Basic Attack , this model may choose to Interrupt the action. The Interrupt occurs after the opponent has selected their 3 dice for the attack, but before damage and Combat Manoeuvres are applied. Change the target of the attack to this model and resolve all damage and Combat Manoeuvres against this model. This ability may only be used once per round.\n\n- y And its Ward is hit by a Basic Attack , this model may choose to Interrupt the action. This Interrupt occurs after the opponent has selected their 3 dice for the attack, but before damage or manoeuvres are applied. The friendly model has their RES set to 2 when resolving damage from this attack. This ability may only be used once per round.",
+  "page_number": 32,
+  "keywords": [
+    "And",
+    "At",
+    "Basic Attack",
+    "Change",
+    "Combat Manoeuvres",
+    "Hero",
+    "Interrupt",
+    "Placed",
+    "RES",
+    "The"
+  ]
+}

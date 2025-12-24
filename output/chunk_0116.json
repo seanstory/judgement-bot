@@ -1,0 +1,19 @@
+{
+  "category": "Combat and Actions",
+  "subcategory": "",
+  "title": "A Parting Blow attack:",
+  "text": "- y Is an Interrupt and occurs before the Advance or Effigy Recall takes place.\n\n- y Inflicts damage like any other Basic Attack .\n\n- y Cannot be used to perform Combat Manoeuvres .\n\nNote, if three 's are rolled on a Parting Blow, the model attempting to disengage will suffer the knock down condition. The knocked down model remains in the same hex it was attempting to leave and can still use other Action Points if it has them available. If a model suffers knock down as the result of a Parting Blow attack and is currently on a hex occupied by another model or terrain feature, the model must be placed within the last legal hex it occupied along the path it took the hex where the Parting Blow was made.",
+  "page_number": 47,
+  "keywords": [
+    "Action Points",
+    "Advance",
+    "Basic Attack",
+    "Cannot",
+    "Combat Manoeuvres",
+    "Effigy Recall",
+    "If",
+    "Inflicts",
+    "Interrupt",
+    "Is"
+  ]
+}

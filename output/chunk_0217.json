@@ -1,0 +1,19 @@
+{
+  "category": "Gods and Effigies",
+  "subcategory": "",
+  "title": "Effigy Regeneration, Healing and Temporary Health",
+  "text": "Regeneration: At the start of each Communion Phase, Effigies regenerate all damage inflicted upon them in the previous round by enemy Basic Attacks . The base health reduction from enemy Bound and Banked Souls remains.\n\nWhen Effigies regenerate their health at the start of the Communion phase, this counts as the Effigy activating. As a result, Tokens that expire at the start of a model's activation are removed from the Effigy.\n\nHealing: Heroes can use certain Abilities to heal their Effigy during a game since it is a friendly model to their Warband. However, only direct damage made by enemy Basic Attacks can be healed this way.",
+  "page_number": 80,
+  "keywords": [
+    "Abilities",
+    "As",
+    "At",
+    "Banked Souls",
+    "Basic Attacks",
+    "Bound",
+    "Communion",
+    "Communion Phase",
+    "Effigies",
+    "Effigy"
+  ]
+}

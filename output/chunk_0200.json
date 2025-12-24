@@ -1,0 +1,17 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "Respawn",
+  "text": "Monsters respawn with maximum health during Step 4 of the second Communion Phase after their death.\n\nRandom Monster spawning pits spawn a randomly determined\n\nmonster (according to the tiers defined in the map setup) each time that the monster respawns.\n\nSome maps include Monsters that start on the table with no corresponding Monster Spawning Pit. In these cases, the Monster does not respawn.",
+  "page_number": 72,
+  "keywords": [
+    "Communion Phase",
+    "In",
+    "Monster",
+    "Monster Spawning Pit",
+    "Monsters",
+    "Random Monster",
+    "Some",
+    "Step"
+  ]
+}

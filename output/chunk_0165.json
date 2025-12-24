@@ -1,0 +1,18 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "Dual Wield ( WEAPON )",
+  "text": "When this model resolves an attack action with a weapon during its activation, it can immediately make 1 Dual Wield attack for (0AP), using the\n\nOnly the first attack of a Charge receives the +2 attack dice bonus, a Dual Wield attack does not get the +2 dice. Dual Wield can only be triggered during a model's activation, and cannot trigger another Dual Wield attack.\n\nModels cannot execute the Push combat manoeuvre on their Dual Wield attack.\n\nMonsters that have Dual Wield only gain the second attack when they activate via the Hunter ability during the Communion Phase.",
+  "page_number": 66,
+  "keywords": [
+    "Charge",
+    "Communion Phase",
+    "Dual Wield",
+    "Hunter",
+    "Models",
+    "Monsters",
+    "Only",
+    "Push",
+    "When"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "category": "Gods and Effigies",
+  "subcategory": "",
+  "title": "Disabling and Capturing an Effigy",
+  "text": "Effigies are disabled and captured when they are reduced to zero base health, which can be achieved by base health reduction, direct damage, or a combination of both. Once captured, the opposing player immediately wins the game.",
+  "page_number": 80,
+  "keywords": [
+    "Effigies",
+    "Once"
+  ]
+}

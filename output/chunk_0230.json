@@ -1,0 +1,19 @@
+{
+  "category": "Heroes and Models",
+  "subcategory": "",
+  "title": "The Commander is the only model in the unit that can:",
+  "text": "- y Purchase and own Magical Artefacts.\n\n- y Use Effigy Recall .\n\n- y Gain levels.\n\nActions: Each activation, the unit can take 3AP plus 1 additional AP for each non-Commander model in the unit. The AP may be distributed however you would like and can be interspersed between models, but each model is restricted to a maximum of 3AP (regardless of the number of AP available to the unit).\n\nSoul Harvest: Only one Soul Harvest attempt can be made per unit activation.\n\nResurrecting: Non-Commander members of a unit do not resurrect until all models in the unit are simultaneously dead OR until the Commander is adjacent to their Effigy during Step 5 (Resurrect Hero Models) of the Communion Phase.\n\n- y Heroes resurrect with max health -3.\n\n- y Resurrecting Heroes are restricted to using only 2AP that round.",
+  "page_number": 83,
+  "keywords": [
+    "Gain",
+    "Each",
+    "Commander",
+    "Effigy",
+    "Non",
+    "Actions",
+    "AP",
+    "Communion Phase",
+    "Magical Artefacts",
+    "Heroes"
+  ]
+}

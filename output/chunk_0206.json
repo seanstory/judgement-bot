@@ -1,0 +1,19 @@
+{
+  "category": "Tokens and Conditions",
+  "subcategory": "",
+  "title": "Bound, Unbound and Banked Souls",
+  "text": "Bound Souls are Souls that were successfully harvested or otherwise attached to a Hero model. They are Bound to that Hero.\n\nA Hero model can lose a  Bound Soul. Souls are lost and removed from the game when:\n\n- A Hero model dies\n\n- A Hero model ends their Activation within their Warband's deployment zone\n\nBanked Souls are Souls that are attached to an Effigy. Once a Soul is Banked , it remains there for the rest of the game and the enemy Effigy remains permanently damaged.\n\nWhen an ability would spawn an Unbound Soul, if there are 2 or more unbound Souls on the board, a Soul will not spawn.",
+  "page_number": 76,
+  "keywords": [
+    "Activation",
+    "Banked",
+    "Banked Souls",
+    "Bound",
+    "Bound Soul",
+    "Bound Souls",
+    "Effigy",
+    "Hero",
+    "Once",
+    "Soul"
+  ]
+}

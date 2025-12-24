@@ -1,0 +1,19 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "Curse",
+  "text": "A model suffering the curse condition :\n\n- y Cannot harvest Souls in any way. If a cursed model kills an enemy model, then the dead model's Soul does not spawn at all; the model is simply removed.\n\n- y Cannot contest or control Shrines.\n\n- y Cannot Assist friendly models, or Hinder enemy models, that attempt a Soul Harvest .\n\n- y Cannot Bank a Soul for killing Undead.\n\n- y Cannot have Souls Bound to them.\n\nNote: If a model has a Soul Bound to it and then becomes cursed, it does not lose that Soul.\n\nUnbound Souls do not move towards Heroes suffering the curse condition during the Communion Phase.",
+  "page_number": 62,
+  "keywords": [
+    "Cannot",
+    "Cannot Assist",
+    "Cannot Bank",
+    "Communion Phase",
+    "Heroes",
+    "Hinder",
+    "If",
+    "Note",
+    "Shrines",
+    "Soul"
+  ]
+}

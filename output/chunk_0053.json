@@ -1,0 +1,15 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "Health Card",
+  "text": "This section displays the Hero's base health. Rakkir starts the game with 15 base health. Damage is marked in descending order, starting from the left side (number 15). Once damage reaches the red 'skull', Rakkir dies. When Rakkir reaches level 2, his max health increases from 15 to 16 (he can heal up to this amount). .",
+  "page_number": 29,
+  "keywords": [
+    "Damage",
+    "Hero",
+    "Once",
+    "Rakkir",
+    "This",
+    "When Rakkir"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "4 Golden Rules for Cards",
+  "text": "1. If a card ability does not set a target, and a target is needed, then the target is the model that the card belongs to (e.g. Skoll's Card 4 states '+1 MEL'. Skoll is the target of the +1 MEL.).\n\n2. If a card does not state from where to measure a distance, measure from the model that the card belongs to (e.g. Skoll's Bulwark ability states, 'Target friendly non-Defender model within 2 hexes…'. The 2 hexes are measured from Skoll.).\n\n3. Cards that target a Hero by name only target the model that the card belongs to (e.g. Skoll's Bulwark states, 'Expires at the end of Skoll's next activation'. This only refers to the Skoll model that cast the Bulwark, not other instances of Skoll (usually enemy Skoll models) that may exist).\n\n4. If a card ability states once per activation, that ability can only be used by the owner of that model during the activation of that model.",
+  "page_number": 29,
+  "keywords": [
+    "Bulwark",
+    "Card",
+    "Cards",
+    "Defender",
+    "Expires",
+    "Hero",
+    "If",
+    "MEL",
+    "Skoll",
+    "Target"
+  ]
+}

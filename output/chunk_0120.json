@@ -1,0 +1,18 @@
+{
+  "category": "Terrain and Maps",
+  "subcategory": "",
+  "title": "INTERACTING WITH TERRAIN",
+  "text": "This plane is rife with obstacles. Judgement maps are purposely designed to pose different challenges to your Heroes, with terrain features positioned differently on each map. Refer to the maps document for instruction in regards to placing the different terrain pieces on each map.\n\nTerrain is often represented by multiple board pieces. Adjacent pieces of terrain of the same type are considered to be one contiguous terrain feature. The exception to this is when an in-game ability places a Terrain Template adjacent to another terrain feature. Terrain Templates are not considered to be one terrain feature, even if placed adjacent to other terrain of the same type.",
+  "page_number": 50,
+  "keywords": [
+    "Adjacent",
+    "Heroes",
+    "Judgement",
+    "Refer",
+    "Terrain",
+    "Terrain Template",
+    "Terrain Templates",
+    "The",
+    "This"
+  ]
+}

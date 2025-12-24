@@ -1,0 +1,19 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "Effigies:",
+  "text": "- y Have AGI 3 and RES 1 (cannot be lowered or ignored by any means even if AGI/RES/etc. are raised by other means).\n\n- y Have height 4 (provide cover for friendly and enemy models and block line-of-sight).\n\n- y Count as a friendly model to the models you control.\n\n- y Have no melee reach but can be engaged by enemy models.\n\n- y Are immune to all conditions .\n\n- y Can be passed through ( Incorporeal ) with friendly models, but are impassable terrain for all non-friendly models.\n\n- y For the Skirmish 3v3 game mode, Effigies gain Stealth and Gravity Well . Neither ability can be ignored by any means.\n\n- y Cannot be Placed or Moved by any means.",
+  "page_number": 80,
+  "keywords": [
+    "AGI",
+    "Are",
+    "Can",
+    "Cannot",
+    "Count",
+    "Effigies",
+    "For",
+    "Gravity Well",
+    "Have",
+    "Incorporeal"
+  ]
+}

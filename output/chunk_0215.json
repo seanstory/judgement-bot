@@ -1,0 +1,19 @@
+{
+  "category": "Terrain and Maps",
+  "subcategory": "",
+  "title": "EFFIGIES &amp; SHRINES",
+  "text": "Models that attack Effigies can only ever use the damage grid from their Basic Attack weapons. Any increase in damage, including artefacts, level-up bonuses, Innate Abilities, etc… to their Basic Attack weapons are ignored.\n\nSimilarly, bonuses to a model's attributes from any source are not applied while attacking Effigies. Any increase in attributes from artefacts, level-up bonuses, Innate or Active Abilities, etc… are ignored.\n\nThe Gang Up and Firing into Melee rules do not apply when a model attacks an opponent's Effigy.\n\nBonuses to the Attack dice pool are restricted to the charging and aiming bonuses. No other dice may be added to the pool while attacking an Effigy.",
+  "page_number": 80,
+  "keywords": [
+    "Active Abilities",
+    "Any",
+    "Attack",
+    "Basic Attack",
+    "Bonuses",
+    "Effigies",
+    "Effigy",
+    "Firing",
+    "Innate",
+    "Innate Abilities"
+  ]
+}

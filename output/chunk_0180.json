@@ -1,0 +1,19 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "Regeneration (X)",
+  "text": "This model will heal 'x' health at the start of the Communion Phase.\n\nModels with Shadow are able to manipulate and use Shadow Orbs, which are Icons that have varying uses. Enemy Shadow Orbs can be removed from play for 1AP by all Heroes (even those without Shadow ) while your activated model is adjacent to them. A Warband can only have a maximum of 3 Shadow Orbs in play at one time.\n\nShadow Orbs cannot be used for any Place effects while their hex is occupied by a non-Token model. When a Shadow Orb is used for a Place effect, remove the starting point Shadow Orb, but not the Shadow Orb at the end point.",
+  "page_number": 29,
+  "keywords": [
+    "This",
+    "Models",
+    "Enemy Shadow Orbs",
+    "Shadow",
+    "Shadow Orbs",
+    "Token",
+    "Warband",
+    "Shadow Orb",
+    "Icons",
+    "Heroes"
+  ]
+}

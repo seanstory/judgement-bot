@@ -1,0 +1,19 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "Psionics",
+  "text": "Psionic characters have the following unique characteristics:\n\n- y Their attack dice pool is calculated against the target's Soul Harvest attribute instead of their AGI.\n\n- y Their attack dice pool starts at 3 attack dice when attacking any model without a Soul Harvest attribute (e.g. Monsters and Summoned).\n\n- y They are unable to target the Effigy with their basic attacks.\n\n- y Gains +1 RES vs MAG attacks.",
+  "page_number": 68,
+  "keywords": [
+    "AGI",
+    "Effigy",
+    "Gains",
+    "MAG",
+    "Monsters",
+    "Psionic",
+    "RES",
+    "Soul Harvest",
+    "Summoned",
+    "Their"
+  ]
+}

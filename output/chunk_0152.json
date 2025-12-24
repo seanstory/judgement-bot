@@ -1,0 +1,19 @@
+{
+  "category": "Tokens and Conditions",
+  "subcategory": "",
+  "title": "Knock Down",
+  "text": "A model suffering the knock down condition :\n\n- y Loses -3 AGI (note that AGI cannot be reduced below 1).\n\n- y Cannot attack or make Parting Blows, and cannot engage enemy models. They can, however, still be engaged by enemy models.\n\n- y Cannot Advance , use Active Abilities, or spend any other AP (including 0AP actions) until they have used Cleanse or Stand Up to remove the condition .\n\n- y Does not contribute to the 'Distracted' or 'Ganging Up' attack dice modifiers. Note: Innate and common abilities can still be used .\n\n- y Cannot Effigy Recall .\n\n- y Has a height of 1.",
+  "page_number": 63,
+  "keywords": [
+    "AGI",
+    "AP",
+    "Active Abilities",
+    "Cannot",
+    "Cannot Advance",
+    "Cannot Effigy Recall",
+    "Cleanse",
+    "Distracted",
+    "Does",
+    "Ganging Up"
+  ]
+}

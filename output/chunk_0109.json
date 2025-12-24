@@ -1,0 +1,19 @@
+{
+  "category": "Combat and Actions",
+  "subcategory": "",
+  "title": "Generic Combat Manoeuvre : Push (x)",
+  "text": "All models (excluding Monsters) can use the Push Combat Manoeuvre . For a Push , the target and/or attacker (attacker's choice) must be moved to an adjacent hex in a straight line (unless otherwise stipulated on your Hero's card).\n\nNote: Attacks with a cost of (0AP) cannot be used to apply the Push Combat Manoeuvre . They can however be used for other Combat Manoeuvres .",
+  "page_number": 46,
+  "keywords": [
+    "All",
+    "Attacks",
+    "Combat Manoeuvres",
+    "For",
+    "Hero",
+    "Monsters",
+    "Note",
+    "Push",
+    "Push Combat Manoeuvre",
+    "They"
+  ]
+}

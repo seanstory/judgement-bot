@@ -1,0 +1,19 @@
+{
+  "category": "Terrain and Maps",
+  "subcategory": "",
+  "title": "Controlling the Shrine",
+  "text": "A player controls a Shrine if one or more of their Hero models is adjacent to the Shrine and no enemy Hero models or Monsters are adjacent to the Shrine. Shrines located on the centre line (equidistant from deployment zones) provide D3 Fate. Non-centre line shrines closer to a Warband's deployment zone provide 1 Fate. Non-centre line shrines closer to the opponent's deployment zone provide 2 Fate.\n\nDuring the Communion Phase, step 3 (pg. 32), if a player controls a Shrine on a map's centre line, one Hero may Buy, Sell, or Trade Magical Artefacts.",
+  "page_number": 81,
+  "keywords": [
+    "Buy",
+    "Communion Phase",
+    "During",
+    "Fate",
+    "Hero",
+    "Monsters",
+    "Non",
+    "Sell",
+    "Shrine",
+    "Shrines"
+  ]
+}

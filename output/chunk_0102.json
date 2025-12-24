@@ -1,0 +1,13 @@
+{
+  "category": "Combat and Actions",
+  "subcategory": "",
+  "title": "Marking Damage",
+  "text": "Any damage from the attack is marked on the target's card. (Damage is reduced by the target's RES attribute.\n\nExample: 5 damage against a RES 2 = 3 damage marked on the card.)",
+  "page_number": 44,
+  "keywords": [
+    "Any",
+    "Damage",
+    "Example",
+    "RES"
+  ]
+}

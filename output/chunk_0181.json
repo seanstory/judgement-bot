@@ -1,0 +1,18 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "Shadow Mist",
+  "text": "Each time an enemy model, while within 2 hexes of this model, takes 1 or more damage from a friendly Hero model's Basic Attacks , this model gains 1 Shadow Mist Counter. A model cannot have more than 2 plus their current level Shadow Mist Counters attached to them at any time\n\nIf two models on the same Warband would generate Shadow Mist from the same attack, the active player must choose one that generates Shadow Mist. The other model does not.",
+  "page_number": 68,
+  "keywords": [
+    "Basic Attacks",
+    "Each",
+    "Hero",
+    "If",
+    "Shadow Mist",
+    "Shadow Mist Counter",
+    "Shadow Mist Counters",
+    "The",
+    "Warband"
+  ]
+}

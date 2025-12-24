@@ -1,0 +1,18 @@
+{
+  "category": "Tokens and Conditions",
+  "subcategory": "",
+  "title": "CONDITIONS",
+  "text": "Weapons aren't the only dangers on this battlefield. Models can be inflicted with conditions during the course of a battle. Conditions are marked on the target using the corresponding Marker.\n\nConditions last until the end of the target model's next activation:\n\n- y And immediately expire once their activation is over, during the end of activation phase.\n\n- y Or they can be removed during the target model's activation by using ' Cleanse ' (costs 1 Fate - see Activation Phase).",
+  "page_number": 62,
+  "keywords": [
+    "Activation Phase",
+    "And",
+    "Cleanse",
+    "Conditions",
+    "Fate",
+    "Marker",
+    "Models",
+    "Or",
+    "Weapons"
+  ]
+}

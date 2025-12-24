@@ -1,0 +1,19 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "ORDER OF APPLICATION",
+  "text": "There are times where the interaction of rules, effects, and condition s can result in tricky situations. If they are not covered in this rulebook, the order of application is chosen by the active player, followed by the model's owner (in case of effects occurring in the Communion Phase).\n\nOccasionally, an event may trigger multiple interrupts/other events. These are not resolved simultaneously but in sequential order, determined by the active player (unless stated otherwise). If the circumstances have changed in resolving one triggered event and the requirements to fulfil the remaining events are no longer present, then the remaining events are not triggered. For example, a Hero advances and triggers 2 Voodoo Idols. If the Hero dies from the first Idol, the second Idol does not trigger.\n\nIn a game, models can be affected by multiple effects and conditions that alter a model's attribute scores. When this occurs, the effects are applied in the following order.\n\n1. Apply positive effects\n\n2. Apply negative effects\n\n3. Apply effects from Tokens &amp; conditions that state they are applied 'after all other positive and negative effects'. If multiple conditions fall into this category, the order of application is chosen by the model's owner.\n\nNote: Abilities and conditions with the same name do not stack. The latest application will replace the original. In the case of effects without a duration (e.g. the Bell of Doom) only one instance will be evaluated.",
+  "page_number": 60,
+  "keywords": [
+    "Abilities",
+    "Apply",
+    "Bell",
+    "Communion Phase",
+    "Doom",
+    "For",
+    "Hero",
+    "Idol",
+    "If",
+    "In"
+  ]
+}

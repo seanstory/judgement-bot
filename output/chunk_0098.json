@@ -1,0 +1,19 @@
+{
+  "category": "Monsters",
+  "subcategory": "",
+  "title": "Multiple Re-rolls and Forced Re-rolls",
+  "text": "A die that has been re-rolled once can never be rolled again. If part of your dice pool has been re-rolled and an ability requires that you re-roll your dice pool, then you re-roll any of the dice in your pool that have not yet been re-rolled.\n\nWhen two or more rules allow/force you to re-roll dice, apply the following to determine the order of rolls:\n\n1. The active player is given 1st option to use an ability to reroll any dice they are able to. This could include multiple re-rolls, such as using Augury (Saiyin's ability) to re-roll 1 die and then Try Again for the remaining dice.\n\n2. The non-active player is then given the option to use an ability to force the active player to re-roll any dice that have not already been re-rolled. Even if the non-active player has the ability to force the active player to re-roll their entire dice pool (such as through the Gift of the Gods Artefact).",
+  "page_number": 42,
+  "keywords": [
+    "Augury",
+    "Even",
+    "Gift",
+    "Gods Artefact",
+    "If",
+    "Saiyin",
+    "The",
+    "This",
+    "Try Again",
+    "When"
+  ]
+}

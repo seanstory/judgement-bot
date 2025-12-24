@@ -1,0 +1,13 @@
+{
+  "category": "Heroes and Models",
+  "subcategory": "",
+  "title": "For a model to gain cover from an attack:",
+  "text": "- y It must occupy a hex that is adjacent to terrain that is identified as cover.\n\n- y Any Direct Line, between the attacker and target model, must cross through a hex (including its border) that provides cover.\n\nNote: or Cover, touching one of the points of the hex does not constitute crossing through the hex or border.",
+  "page_number": 53,
+  "keywords": [
+    "Any Direct Line",
+    "Cover",
+    "It",
+    "Note"
+  ]
+}

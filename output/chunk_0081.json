@@ -1,0 +1,19 @@
+{
+  "category": "Heroes and Models",
+  "subcategory": "",
+  "title": "These Heroes don't last very long… better bandage up those battle wounds.",
+  "text": "Your activated Hero heals 5 health (up to their maximum, including temporary health). This can only be used once per Hero activation.\n\nYour Hero can attempt to harvest an unbound Soul that is adjacent to them. Heroes with the Soulgazer innate ability can attempt to harvest an unbound Soul that is up to 2 hexes away.\n\n- y Attempt a harvest by rolling a Soul Harvest skill check: 2 D6.\n\n- y Add the Hero's Soul Harvest ability stat to your roll.\n\n- y Assist: +1 for each friendly Hero adjacent to the Soul. The Hero attempting the Soul Harvest does not contribute.\n\n- y Hinder: -1 for each enemy Hero and/or Monster adjacent to the Soul.\n\nIf the sum is 12 or more, the Soul is successfully harvested.\n\nIf a Soul is harvested, your opponent's Effigy's base health receives 4 damage. Note, this damage ignores temporary health.",
+  "page_number": 37,
+  "keywords": [
+    "This",
+    "Add",
+    "If",
+    "Attempt",
+    "Assist",
+    "Effigy",
+    "Your",
+    "Hinder",
+    "Monster",
+    "Note"
+  ]
+}

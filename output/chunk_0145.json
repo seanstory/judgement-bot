@@ -1,0 +1,17 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "Interrupt",
+  "text": "Abilities that can be activated during another action are called ' Interrupts ' and they are labelled as follows: &lt;Ability Name&gt;( Interrupt ).\n\nAbilities with this label are able to halt the sequence of events that would normally take place as part of an action. Each Interrupt ability clearly lists when the action sequence is halted. After the Interrupt ability is resolved, the action sequence will continue.\n\nA model can only use 1 Interrupt for each enemy action; however, they may use multiple Interrupts on their turn. If an Interrupt ensues from an effect/token placed in an earlier activation by a model, that model owns the effect/ token and is considered the model making the Interrupt. If multiple Interrupts clash in timing, compulsory Interrupts take precedence, and those effects may preclude the use of optional Interrupts.\n\nSometimes the Interrupt will change the target of an action, and in this case the new target is considered to be within lineof-sight and reach of the model performing the action.",
+  "page_number": 34,
+  "keywords": [
+    "Abilities",
+    "Ability Name",
+    "After",
+    "Each Interrupt",
+    "If",
+    "Interrupt",
+    "Interrupts",
+    "Sometimes"
+  ]
+}

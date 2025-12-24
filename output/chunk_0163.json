@@ -1,0 +1,12 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "Animosity (X)",
+  "text": "Friendly abilities cannot be cast on model type X.\n\nThis model deals +1 damage while using a Basic Attack with a melee weapon against an enemy model that is engaged by a friendly model.",
+  "page_number": 66,
+  "keywords": [
+    "Basic Attack",
+    "Friendly",
+    "This"
+  ]
+}

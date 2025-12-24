@@ -1,0 +1,15 @@
+{
+  "category": "Heroes and Models",
+  "subcategory": "",
+  "title": "Get your Heroes moving around the board!",
+  "text": "Your model Advances their MOV value in hexes, or less (if desired). This can be to any unoccupied adjacent hexes. It does not have to be in a straight line.\n\nHeroes cannot voluntarily move through hexes occupied by impassable terrain or other models.",
+  "page_number": 36,
+  "keywords": [
+    "Advances",
+    "Heroes",
+    "It",
+    "MOV",
+    "This",
+    "Your"
+  ]
+}

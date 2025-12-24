@@ -1,0 +1,15 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "Protect Me",
+  "text": "Interrupt : Attack Process.\n\nWhen this model is hit by a Basic Attack , this model may choose to Interrupt the action. Change the target of the attack to a friendly adjacent model and resolve all damage and Combat Manoeuvres against that model. 1 use per round.",
+  "page_number": 68,
+  "keywords": [
+    "Attack Process",
+    "Basic Attack",
+    "Change",
+    "Combat Manoeuvres",
+    "Interrupt",
+    "When"
+  ]
+}

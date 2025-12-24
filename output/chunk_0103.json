@@ -1,0 +1,19 @@
+{
+  "category": "General Rules",
+  "subcategory": "",
+  "title": "Example:",
+  "text": "Let's say Saiyin wants to resolve her attack agaisnt Skoll with the roll we calculated in the previous examples.\n\nShe chooses three Hits from the pool of 4 dice, a Crit!\n\nLooking at the Wither Soul attack on Saiyin's card to see that a Crit will inflict 4 damage .\n\nSkoll is a Defender , a class with skill at resisting damage. He has a resilience (RES) of 1. So the 4 damage from Wither Soul 's Crit only inflicts 3 damage on him.\n\nATTACK DAMAGE - RESILIENCE = FINAL DAMAGE\n\nLet's apply the formula:\n\nDAMAGE is  4 (CRIT) -  1 (RES)  =  3\n\nSkoll loses 3 health , going from 21 to 18 health, and marks it on his Health Card.",
+  "page_number": 44,
+  "keywords": [
+    "ATTACK DAMAGE",
+    "CRIT",
+    "Crit",
+    "DAMAGE",
+    "Defender",
+    "FINAL DAMAGE",
+    "He",
+    "Health Card",
+    "Hits",
+    "Let"
+  ]
+}
