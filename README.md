@@ -1,170 +1,245 @@
-# Crawlee Web Crawler Connector
+# judgement-bot
 
-A web crawler connector for Elasticsearch using the [Crawlee](https://crawlee.dev/) Python library.
+Rules search engine for Judgement: Eternal Champions board game.
 
-## Overview
-
-This connector crawls websites starting from configurable seed URLs and extracts page content into Elasticsearch. It uses BeautifulSoupCrawler for HTML parsing and supports domain filtering, depth control, and URL exclusion patterns.
+Parses the official rulebook PDF into structured, searchable chunks and ingests them into Elasticsearch for semantic search.
 
 ## Features
 
-- 🌐 Configurable seed URLs and allowed domains
-- 📏 Depth-limited crawling from seed pages
-- 🚫 URL exclusion patterns
-- 🤖 Respects robots.txt (configurable)
-- 📝 Extracts clean text content from HTML
-- 🏷️ Captures page metadata (title, keywords, description, author)
-- 🔄 Page limit controls to prevent runaway crawls
+- **ML-based PDF parsing** using Docling for intelligent document structure detection
+- **Accurate page numbers** using hybrid pypdf approach
+- **Smart categorization** into 12 thematic categories
+- **Semantic search** ready with `semantic_text` field mappings
+- **265 searchable chunks** from 100-page rulebook
 
-## Configuration
+## Setup
 
-| Field | Type | Required | Default | Description |
-|-------|------|----------|---------|-------------|
-| `seed_urls` | list | Yes | - | Starting URLs for the crawl |
-| `allowed_domains` | list | No | [] (all allowed) | Restrict crawling to these domains |
-| `max_crawl_depth` | int | No | 3 | Maximum link depth from seed URLs (0 = seed URLs only) |
-| `max_pages` | int | No | 1000 | Maximum total pages to crawl |
-| `respect_robots_txt` | bool | No | true | Honor robots.txt exclusion rules |
-| `exclude_patterns` | list | No | [] | URL patterns to skip (substring match) |
-| `user_agent` | str | No | (Crawlee default) | Custom User-Agent string |
+### Requirements
 
-### Example Configuration
+- Python 3.11+
+- Elasticsearch 8.11+ (with API key access)
 
-```yaml
-seed_urls:
-  - https://example.com
-  - https://example.com/docs
-allowed_domains:
-  - example.com
-  - www.example.com
-max_crawl_depth: 2
-max_pages: 500
-respect_robots_txt: true
-exclude_patterns:
-  - /admin
-  - /login
-  - .pdf
-user_agent: MyCustomCrawler/1.0
+### Installation
+
+1. Clone the repository
+2. Install dependencies:
+
+```bash
+make install
 ```
 
-## Document Schema
-
-Each crawled page produces a document with the following fields:
-
-```json
-{
-  "_id": "SHA256 hash of URL",
-  "_timestamp": "ISO 8601 timestamp of crawl",
-  "url": "Full page URL",
-  "title": "Page title from <title> tag",
-  "keywords": "Meta keywords (if present)",
-  "description": "Meta description (if present)",
-  "author": "Meta author (if present)",
-  "text": "Clean text content (scripts/styles/nav/footer removed)",
-  "depth": 0,
-  "domain": "hostname",
-  "type": "webpage"
-}
+Or manually:
+```bash
+pip install -r requirements.txt
 ```
 
 ## Usage
 
-### Via Kibana UI
+### 1. Parse the Rulebook
 
-1. Navigate to **Stack Management** → **Connectors**
-2. Create a new connector with service type **Crawlee Web Crawler**
-3. Configure the seed URLs and crawler settings
-4. Create a sync job to start crawling
+Parse the PDF into JSON chunks:
 
-### Via CLI
-
-1. **Create connector**:
-   ```bash
-   connectors connector create \
-     --index-name my-website-crawl \
-     --service-type crawlee \
-     --name "My Website Crawler"
-   ```
-
-2. **Configure via Kibana UI** or Elasticsearch API
-
-3. **Run connector service**:
-   ```bash
-   elastic-ingest --config-file config.yml
-   ```
-
-### Via Configuration File
-
-Create a `config.yml`:
-
-```yaml
-elasticsearch:
-  host: https://your-es-cluster:443
-  api_key: your-api-key
-
-connectors:
-  - connector_id: your-connector-id
-    service_type: crawlee
-
-sources:
-  crawlee: connectors.sources.crawlee:CrawleeDataSource
-```
-
-Then run:
 ```bash
-elastic-ingest --config-file config.yml
+make run
 ```
+
+Or manually:
+```bash
+python3 parse_rulebook.py
+```
+
+This creates an `output/` directory with:
+- Individual JSON files for each chunk (`chunk_0001.json`, `chunk_0002.json`, etc.)
+- A `_summary.json` file with parsing metadata
+
+The parser will:
+1. Use Docling to extract structured content and detect headings
+2. Intelligently categorize content into thematic groups
+3. Find accurate page numbers using pypdf text matching
+4. Extract keywords from each chunk
+5. Validate that all chunks have category and title fields
+
+### 2. Ingest to Elasticsearch
+
+#### Setup
+
+1. Copy the example environment file:
+```bash
+cp .env.example .env
+```
+
+2. Edit `.env` and add your Elasticsearch credentials:
+```
+ELASTICSEARCH_URL=https://your-cluster.es.region.cloud.es.io:443
+ELASTICSEARCH_API_KEY=your-api-key-here
+ELASTICSEARCH_INDEX=judgement_core_rules
+```
+
+#### Ingest Data
+
+```bash
+make ingest
+```
+
+Or manually:
+```bash
+python3 ingest.py
+```
+
+The ingestion script will:
+1. Verify connection to Elasticsearch
+2. Create the index if it doesn't exist (using `mappings.json`)
+3. Bulk ingest all chunks with 5-minute timeout
+4. Verify successful ingestion
+
+### 3. Clean Output
+
+To remove generated JSON files:
+
+```bash
+make clean
+```
+
+## Data Schema
+
+Each chunk has the following structure:
+
+```json
+{
+  "category": "Combat and Actions",
+  "subcategory": "",
+  "title": "Charge Attack",
+  "text": "This is a very popular combo move...",
+  "page_number": 42,
+  "keywords": ["Attack", "Melee", "Combat", "Charge"]
+}
+```
+
+### Categories
+
+The parser automatically categorizes content into:
+
+- **Combat and Actions** - Attacks, damage, combat mechanics
+- **Tokens and Conditions** - Status effects, tokens, markers
+- **Terrain and Maps** - Map features, line of sight, shrines
+- **Heroes and Models** - Character rules, warbands, drafting
+- **Game Phases** - Turn sequence, activation, communion
+- **Gods and Effigies** - Deity traits, effigy rules
+- **Abilities and Powers** - Special abilities, maneuvers
+- **Monsters** - Monster rules and behavior
+- **Game Setup** - Initial setup, components
+- **Dice and Resolution** - Dice rolling, fate dice
+- **Special Rules** - Unique mechanics
+- **General Rules** - Everything else
+
+## Elasticsearch Index
+
+### Index Name
+
+`judgement_core_rules` (configurable via `.env`)
+
+### Field Mappings
+
+The index uses specialized field types for semantic search:
+
+- `category`: `semantic_text` - Enables semantic search on categories
+- `subcategory`: `semantic_text` - Subcategory semantic search
+- `title`: `semantic_text` - Semantic search on chunk titles
+- `text`: `semantic_text` - Full semantic search on content
+- `keywords`: `keyword` - Exact matching and aggregations
+- `page_number`: `integer` - Page reference
+
+Mappings are defined in `mappings.json` and can be customized before index creation.
+
+### Document Count
+
+The Elasticsearch UI may show ~1,069 documents due to internal embedding documents created by `semantic_text` fields. The actual searchable document count is 265 chunks.
 
 ## How It Works
 
-1. **Initialization**: Crawler starts with configured seed URLs
-2. **Crawling**: For each page:
-   - Fetches HTML content
-   - Checks domain and exclusion rules
-   - Verifies depth limit
-   - Extracts text and metadata
-   - Discovers links for further crawling
-3. **Indexing**: Documents are yielded to the framework for bulk indexing
-4. **Completion**: Stops when max_pages reached or no more URLs to crawl
+### Parsing Pipeline
 
-## Depth Calculation
+1. **Docling extraction**: Uses ML models to parse PDF and identify document structure
+2. **Markdown conversion**: Exports to markdown preserving heading hierarchy
+3. **Category inference**: Pattern-based categorization of sections
+4. **Chunk creation**: Groups content under logical headings
+5. **Chunk merging**: Combines small fragments for better context
+6. **Page number detection**:
+   - Extracts text with pypdf from original PDF
+   - Matches chunk text using multiple strategies:
+     - Exact phrase matching with word sequences
+     - Fuzzy matching with keyword counting
+     - Best-effort page assignment
+7. **Validation**: Ensures all required fields are present
+8. **Keyword extraction**: Identifies important terms
 
-Depth is calculated as the number of path segments beyond the seed URL:
-- Seed URL: `https://example.com/docs` → depth 0
-- `/docs/guide` → depth 1
-- `/docs/guide/setup` → depth 2
+### Why Hybrid Approach?
 
-## Text Extraction
+- **Docling**: Superior at understanding document structure and hierarchy
+- **pypdf**: Better at preserving exact page locations
+- **Combined**: Get the best of both - smart structure + accurate page numbers
 
-The connector extracts clean text by:
-1. Removing `<script>`, `<style>`, `<nav>`, `<footer>` elements
-2. Extracting text with `get_text()`
-3. Cleaning up whitespace and formatting
-4. Producing Markdown-like output
+## Project Structure
 
-## Limitations
-
-- Uses BeautifulSoupCrawler (no JavaScript execution)
-- For JavaScript-heavy sites, consider using Playwright-based crawlers
-- Crawlee respects politeness delays between requests
-- Large crawls may take significant time
-
-## Dependencies
-
-- `crawlee[beautifulsoup]==1.2.1`
-- Python 3.10-3.11
+```
+judgement-bot/
+├── parse_rulebook.py      # Main parsing script
+├── ingest.py              # Elasticsearch ingestion script
+├── mappings.json          # ES index mappings
+├── requirements.txt       # Python dependencies
+├── pyproject.toml         # Project metadata
+├── Makefile              # Build commands
+├── .env.example          # Example configuration
+├── .env                  # Your credentials (gitignored)
+└── output/               # Generated JSON chunks (gitignored)
+    ├── chunk_0001.json
+    ├── chunk_0002.json
+    └── _summary.json
+```
 
 ## Development
 
-See the main connectors framework documentation for:
-- Running tests: `make test`
-- Linting: `make lint`
-- Development setup: `make install`
+### Make Commands
 
-Tests are located in `tests/sources/test_crawlee.py`.
+- `make install` - Install Python dependencies
+- `make run` - Parse the rulebook PDF
+- `make ingest` - Ingest chunks to Elasticsearch
+- `make clean` - Remove output directory
 
-## Support
+### Adding New Features
 
-This connector is part of the Elasticsearch Connectors framework. For issues or questions:
-- Framework documentation: See main README
-- Crawlee documentation: https://crawlee.dev/
+The parser is designed to be extensible:
+
+- **Category inference**: Edit `infer_category_from_heading()` to add new categories
+- **Index mappings**: Modify `mappings.json` before first ingestion
+- **Chunk size**: Adjust `min_chunk_length` parameter in `parse_pdf()`
+- **Page detection**: Tune `find_page_number()` for better accuracy
+
+## Troubleshooting
+
+### All page numbers are 1
+Run the parser again - the hybrid pypdf approach should find accurate pages.
+
+### Elasticsearch connection fails
+- Check your `.env` file has correct credentials
+- Verify your API key has index creation permissions
+- Ensure the Elasticsearch URL includes the port (usually :443)
+
+### Docling takes too long
+Docling uses ML models which can be slow. On a typical laptop:
+- Initial model download: ~1 minute (first run only)
+- PDF processing: ~75 seconds for 100 pages
+- Page number detection: ~5 seconds
+
+### Document count mismatch
+The `semantic_text` field creates internal embedding documents. This is expected - your searchable chunks are the 265 source documents.
+
+## License
+
+See LICENSE file.
+
+## Credits
+
+- **Judgement: Eternal Champions** - Created by Andrew Galea, reimagined by Creature Caster
+- **Docling** - IBM Research's document understanding library
+- **pypdf** - PDF text extraction library
