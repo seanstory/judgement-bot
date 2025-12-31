@@ -1,3 +1,5 @@
+Chat with the bot at https://judgement-bot-drab.vercel.app/
+
 # Judgement Rules Chat
 
 AI-powered rules search and chat interface for Judgement: Eternal Champions board game.
