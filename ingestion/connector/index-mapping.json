@@ -16,15 +16,6 @@
       "description": {
         "type": "semantic_text"
       },
-      "author": {
-        "type": "keyword"
-      },
-      "depth": {
-        "type": "integer"
-      },
-      "domain": {
-        "type": "keyword"
-      },
       "type": {
         "type": "keyword"
       }

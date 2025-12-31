@@ -1,245 +1,271 @@
-# judgement-bot
+# Judgement Rules Chat
 
-Rules search engine for Judgement: Eternal Champions board game.
+AI-powered rules search and chat interface for Judgement: Eternal Champions board game.
 
-Parses the official rulebook PDF into structured, searchable chunks and ingests them into Elasticsearch for semantic search.
+This repository contains two main components:
 
-## Features
+1. **Web Application** (`webapp/`) - A Next.js chat interface that uses Elasticsearch's Agent Builder APIs
+2. **Ingestion Tools** (`ingestion/`) - Scripts to parse the rulebook PDF and ingest it into Elasticsearch
 
-- **ML-based PDF parsing** using Docling for intelligent document structure detection
-- **Accurate page numbers** using hybrid pypdf approach
-- **Smart categorization** into 12 thematic categories
-- **Semantic search** ready with `semantic_text` field mappings
-- **265 searchable chunks** from 100-page rulebook
+## Quick Start
 
-## Setup
+### Web Application
 
-### Requirements
+The chat interface provides an AI-powered assistant for Judgement rules queries.
 
-- Python 3.11+
-- Elasticsearch 8.11+ (with API key access)
+#### Prerequisites
 
-### Installation
-
-1. Clone the repository
-2. Install dependencies:
-
-```bash
-make install
-```
-
-Or manually:
-```bash
-pip install -r requirements.txt
-```
-
-## Usage
-
-### 1. Parse the Rulebook
-
-Parse the PDF into JSON chunks:
-
-```bash
-make run
-```
-
-Or manually:
-```bash
-python3 parse_rulebook.py
-```
-
-This creates an `output/` directory with:
-- Individual JSON files for each chunk (`chunk_0001.json`, `chunk_0002.json`, etc.)
-- A `_summary.json` file with parsing metadata
-
-The parser will:
-1. Use Docling to extract structured content and detect headings
-2. Intelligently categorize content into thematic groups
-3. Find accurate page numbers using pypdf text matching
-4. Extract keywords from each chunk
-5. Validate that all chunks have category and title fields
-
-### 2. Ingest to Elasticsearch
+- Node.js 18+
+- Kibana instance with Agent Builder configured
+- Elasticsearch cluster with ingested rulebook data
 
 #### Setup
 
-1. Copy the example environment file:
+1. Navigate to the webapp directory:
+```bash
+cd webapp
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Configure environment variables:
 ```bash
 cp .env.example .env
 ```
 
-2. Edit `.env` and add your Elasticsearch credentials:
+Edit `.env` and add your Kibana credentials:
 ```
-ELASTICSEARCH_URL=https://your-cluster.es.region.cloud.es.io:443
-ELASTICSEARCH_API_KEY=your-api-key-here
-ELASTICSEARCH_INDEX=judgement_core_rules
+KIBANA_URL=https://your-kibana-instance.kb.region.cloud.es.io
+KIBANA_API_KEY=your-api-key-here
+KIBANA_AGENT_ID=your-agent-id-here
+KIBANA_SPACE=default
 ```
 
-#### Ingest Data
-
+4. Run the development server:
 ```bash
+npm run dev
+```
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+#### Deployment to Vercel
+
+The application is optimized for Vercel deployment:
+
+1. Push this repository to GitHub
+2. Import the project in Vercel
+3. Vercel will automatically detect the Next.js configuration
+4. Add the environment variables in Vercel's dashboard:
+   - `KIBANA_URL`
+   - `KIBANA_API_KEY`
+   - `KIBANA_AGENT_ID`
+   - `KIBANA_SPACE` (optional, defaults to "default")
+5. Deploy
+
+Alternatively, use the Vercel CLI:
+```bash
+vercel
+```
+
+### Ingestion Tools
+
+The ingestion tools parse the Judgement rulebook PDF and load it into Elasticsearch.
+
+See [`ingestion/README.md`](ingestion/README.md) for detailed setup and usage instructions.
+
+Quick overview:
+```bash
+cd ingestion
+
+# Install dependencies
+make install
+
+# Parse the rulebook
+make run
+
+# Configure Elasticsearch credentials
+cp .env.example .env
+# Edit .env with your credentials
+
+# Ingest to Elasticsearch
 make ingest
 ```
-
-Or manually:
-```bash
-python3 ingest.py
-```
-
-The ingestion script will:
-1. Verify connection to Elasticsearch
-2. Create the index if it doesn't exist (using `mappings.json`)
-3. Bulk ingest all chunks with 5-minute timeout
-4. Verify successful ingestion
-
-### 3. Clean Output
-
-To remove generated JSON files:
-
-```bash
-make clean
-```
-
-## Data Schema
-
-Each chunk has the following structure:
-
-```json
-{
-  "category": "Combat and Actions",
-  "subcategory": "",
-  "title": "Charge Attack",
-  "text": "This is a very popular combo move...",
-  "page_number": 42,
-  "keywords": ["Attack", "Melee", "Combat", "Charge"]
-}
-```
-
-### Categories
-
-The parser automatically categorizes content into:
-
-- **Combat and Actions** - Attacks, damage, combat mechanics
-- **Tokens and Conditions** - Status effects, tokens, markers
-- **Terrain and Maps** - Map features, line of sight, shrines
-- **Heroes and Models** - Character rules, warbands, drafting
-- **Game Phases** - Turn sequence, activation, communion
-- **Gods and Effigies** - Deity traits, effigy rules
-- **Abilities and Powers** - Special abilities, maneuvers
-- **Monsters** - Monster rules and behavior
-- **Game Setup** - Initial setup, components
-- **Dice and Resolution** - Dice rolling, fate dice
-- **Special Rules** - Unique mechanics
-- **General Rules** - Everything else
-
-## Elasticsearch Index
-
-### Index Name
-
-`judgement_core_rules` (configurable via `.env`)
-
-### Field Mappings
-
-The index uses specialized field types for semantic search:
-
-- `category`: `semantic_text` - Enables semantic search on categories
-- `subcategory`: `semantic_text` - Subcategory semantic search
-- `title`: `semantic_text` - Semantic search on chunk titles
-- `text`: `semantic_text` - Full semantic search on content
-- `keywords`: `keyword` - Exact matching and aggregations
-- `page_number`: `integer` - Page reference
-
-Mappings are defined in `mappings.json` and can be customized before index creation.
-
-### Document Count
-
-The Elasticsearch UI may show ~1,069 documents due to internal embedding documents created by `semantic_text` fields. The actual searchable document count is 265 chunks.
-
-## How It Works
-
-### Parsing Pipeline
-
-1. **Docling extraction**: Uses ML models to parse PDF and identify document structure
-2. **Markdown conversion**: Exports to markdown preserving heading hierarchy
-3. **Category inference**: Pattern-based categorization of sections
-4. **Chunk creation**: Groups content under logical headings
-5. **Chunk merging**: Combines small fragments for better context
-6. **Page number detection**:
-   - Extracts text with pypdf from original PDF
-   - Matches chunk text using multiple strategies:
-     - Exact phrase matching with word sequences
-     - Fuzzy matching with keyword counting
-     - Best-effort page assignment
-7. **Validation**: Ensures all required fields are present
-8. **Keyword extraction**: Identifies important terms
-
-### Why Hybrid Approach?
-
-- **Docling**: Superior at understanding document structure and hierarchy
-- **pypdf**: Better at preserving exact page locations
-- **Combined**: Get the best of both - smart structure + accurate page numbers
 
 ## Project Structure
 
 ```
 judgement-bot/
-├── parse_rulebook.py      # Main parsing script
-├── ingest.py              # Elasticsearch ingestion script
-├── mappings.json          # ES index mappings
-├── requirements.txt       # Python dependencies
-├── pyproject.toml         # Project metadata
-├── Makefile              # Build commands
-├── .env.example          # Example configuration
-├── .env                  # Your credentials (gitignored)
-└── output/               # Generated JSON chunks (gitignored)
-    ├── chunk_0001.json
-    ├── chunk_0002.json
-    └── _summary.json
+├── webapp/                      # Next.js chat application
+│   ├── app/                    # Next.js app directory
+│   │   ├── api/               # Backend API routes
+│   │   │   ├── chat/         # Chat message endpoint
+│   │   │   └── conversations/ # Conversation management
+│   │   ├── globals.css       # Global styles
+│   │   ├── layout.tsx        # Root layout
+│   │   └── page.tsx          # Main chat page
+│   ├── components/            # React components
+│   │   ├── ChatInput.tsx     # Message input component
+│   │   ├── ChatMessage.tsx   # Message display component
+│   │   └── ConversationList.tsx # Sidebar conversation list
+│   ├── lib/                   # Utilities and types
+│   │   ├── kibana-client.ts  # Kibana API client
+│   │   └── types.ts          # TypeScript types
+│   ├── public/                # Static assets
+│   ├── .env.example          # Environment template
+│   ├── next.config.ts        # Next.js configuration
+│   ├── package.json          # Dependencies
+│   ├── tailwind.config.ts    # Tailwind CSS config
+│   └── tsconfig.json         # TypeScript config
+│
+├── ingestion/                  # Rulebook parsing and ingestion
+│   ├── connector/             # Crawlee connector for web content
+│   ├── parse_rulebook.py     # PDF parsing script
+│   ├── ingest.py             # Elasticsearch ingestion
+│   ├── mappings.json         # Index mappings
+│   ├── requirements.txt      # Python dependencies
+│   └── Makefile             # Build commands
+│
+├── vercel.json                # Vercel deployment config
+└── README.md                  # This file
 ```
+
+## Features
+
+### Web Application
+
+- **Chat Interface**: Clean, dark-themed UI matching Judgement's aesthetic
+- **Conversation History**: Browse and resume previous conversations
+- **Real-time Responses**: Streaming responses from Kibana Agent Builder
+- **Session Management**: All conversation state managed by Elasticsearch
+- **No Auth Required**: Single-user application using shared Elasticsearch credentials
+- **Mobile Responsive**: Works on desktop and mobile devices
+
+### Ingestion Tools
+
+- **ML-based PDF parsing** using Docling
+- **Smart categorization** into 12 thematic categories
+- **Semantic search** ready with `semantic_text` fields
+- **265 searchable chunks** from 100-page rulebook
+
+## API Routes
+
+The webapp provides the following API endpoints:
+
+### `POST /api/chat`
+Send a message to the assistant.
+
+**Request:**
+```json
+{
+  "message": "How does charging work?",
+  "conversationId": "optional-conversation-id"
+}
+```
+
+**Response:**
+```json
+{
+  "conversation_id": "conv_123",
+  "message": "Charging is a type of attack..."
+}
+```
+
+### `GET /api/conversations`
+Get all conversations.
+
+**Response:**
+```json
+[
+  {
+    "id": "conv_123",
+    "title": "Charging Rules",
+    "messages": [...],
+    "last_updated": "2025-12-31T12:00:00Z"
+  }
+]
+```
+
+### `GET /api/conversations/[id]`
+Get a specific conversation.
+
+### `DELETE /api/conversations/[id]`
+Delete a conversation.
+
+## Technology Stack
+
+### Frontend
+- **Next.js 15** - React framework with App Router
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Styling with custom dark theme
+- **Google Fonts** - Figtree & Oswald fonts matching Judgement branding
+
+### Backend
+- **Next.js API Routes** - Serverless API endpoints
+- **Kibana Agent Builder API** - AI-powered chat backend
+- **Elasticsearch** - Document storage and semantic search
+
+### Deployment
+- **Vercel** - Hosting and serverless functions
+
+## Environment Variables
+
+### Required
+- `KIBANA_URL` - Your Kibana instance URL
+- `KIBANA_API_KEY` - API key with Agent Builder permissions
+- `KIBANA_AGENT_ID` - The ID of your configured agent
+
+### Optional
+- `KIBANA_SPACE` - Kibana space name (default: "default")
 
 ## Development
 
-### Make Commands
+### Running Locally
 
-- `make install` - Install Python dependencies
-- `make run` - Parse the rulebook PDF
-- `make ingest` - Ingest chunks to Elasticsearch
-- `make clean` - Remove output directory
+```bash
+# Install dependencies
+cd webapp
+npm install
 
-### Adding New Features
+# Start development server
+npm run dev
+```
 
-The parser is designed to be extensible:
+The app will be available at [http://localhost:3000](http://localhost:3000)
 
-- **Category inference**: Edit `infer_category_from_heading()` to add new categories
-- **Index mappings**: Modify `mappings.json` before first ingestion
-- **Chunk size**: Adjust `min_chunk_length` parameter in `parse_pdf()`
-- **Page detection**: Tune `find_page_number()` for better accuracy
+### Building for Production
+
+```bash
+npm run build
+npm start
+```
 
 ## Troubleshooting
 
-### All page numbers are 1
-Run the parser again - the hybrid pypdf approach should find accurate pages.
+### "Failed to load conversations"
+- Check that `KIBANA_URL` is correct and accessible
+- Verify `KIBANA_API_KEY` has the necessary permissions
+- Ensure the Agent Builder is properly configured in Kibana
 
-### Elasticsearch connection fails
-- Check your `.env` file has correct credentials
-- Verify your API key has index creation permissions
-- Ensure the Elasticsearch URL includes the port (usually :443)
+### "Failed to send message"
+- Verify `KIBANA_AGENT_ID` matches your configured agent
+- Check that your agent has access to the ingested rulebook index
+- Review Kibana logs for agent errors
 
-### Docling takes too long
-Docling uses ML models which can be slow. On a typical laptop:
-- Initial model download: ~1 minute (first run only)
-- PDF processing: ~75 seconds for 100 pages
-- Page number detection: ~5 seconds
-
-### Document count mismatch
-The `semantic_text` field creates internal embedding documents. This is expected - your searchable chunks are the 265 source documents.
-
-## License
-
-See LICENSE file.
+### Styling issues
+- Clear your browser cache
+- Ensure Tailwind CSS is properly configured
+- Check that Google Fonts are loading
 
 ## Credits
 
 - **Judgement: Eternal Champions** - Created by Andrew Galea, reimagined by Creature Caster
 - **Docling** - IBM Research's document understanding library
-- **pypdf** - PDF text extraction library
+- **Elasticsearch** - Search and analytics engine
+- **Kibana Agent Builder** - AI agent framework
+
+## License
+
+See LICENSE file.

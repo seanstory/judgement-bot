@@ -1,0 +1,6 @@
+The favicon.svg will work in all modern browsers.
+
+To create favicon.ico for older browsers:
+1. Visit https://realfavicongenerator.net/
+2. Upload the favicon.svg
+3. Download and replace this file with the generated favicon.ico
