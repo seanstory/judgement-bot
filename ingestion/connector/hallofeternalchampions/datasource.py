@@ -141,6 +141,7 @@ class HallOfEternalChampionsDataSource(BaseDataSource):
                 doc["innate_abilities"] = page.get("innate_abilities", [])
                 doc["active_abilities"] = page.get("active_abilities", [])
                 doc["combat_manoeuvres"] = page.get("combat_manoeuvres", [])
+                doc["hero_name"] = page.get("title", "")
 
             elif category in ["monster", "summon"]:
                 doc["creature_type"] = page.get("creature_type", "")
