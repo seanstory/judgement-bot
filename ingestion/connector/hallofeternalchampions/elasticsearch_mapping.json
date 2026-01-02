@@ -1,0 +1,277 @@
+{
+  "mappings": {
+    "properties": {
+      "_timestamp": {
+        "type": "date"
+      },
+      "url": {
+        "type": "keyword"
+      },
+      "title": {
+        "type": "semantic_text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "img_url": {
+        "type": "keyword"
+      },
+      "text": {
+        "type": "semantic_text"
+      },
+      "category": {
+        "type": "keyword"
+      },
+      "attributes": {
+        "properties": {
+          "MOV": {
+            "type": "keyword",
+            "fields": {
+              "int": {
+                "type": "integer",
+                "ignore_malformed": true
+              }
+            }
+          },
+          "MEL": {
+            "type": "keyword",
+            "fields": {
+              "int": {
+                "type": "integer",
+                "ignore_malformed": true
+              }
+            }
+          },
+          "RNG": {
+            "type": "keyword",
+            "fields": {
+              "int": {
+                "type": "integer",
+                "ignore_malformed": true
+              }
+            }
+          },
+          "MAG": {
+            "type": "keyword",
+            "fields": {
+              "int": {
+                "type": "integer",
+                "ignore_malformed": true
+              }
+            }
+          },
+          "AGI": {
+            "type": "keyword",
+            "fields": {
+              "int": {
+                "type": "integer",
+                "ignore_malformed": true
+              }
+            }
+          },
+          "RES": {
+            "type": "keyword",
+            "fields": {
+              "int": {
+                "type": "integer",
+                "ignore_malformed": true
+              }
+            }
+          },
+          "SH": {
+            "type": "keyword",
+            "fields": {
+              "int": {
+                "type": "integer",
+                "ignore_malformed": true
+              }
+            }
+          }
+        }
+      },
+      "champions": {
+        "type": "keyword"
+      },
+      "avatars": {
+        "type": "keyword"
+      },
+      "divine_attributes": {
+        "type": "keyword"
+      },
+      "difficulty": {
+        "type": "keyword"
+      },
+      "classes": {
+        "type": "keyword"
+      },
+      "weapons": {
+        "type": "nested",
+        "properties": {
+          "name": {
+            "type": "keyword"
+          },
+          "type": {
+            "type": "keyword"
+          },
+          "cost": {
+            "type": "keyword"
+          },
+          "reach": {
+            "type": "keyword",
+            "fields": {
+              "int": {
+                "type": "integer",
+                "ignore_malformed": true
+              }
+            }
+          },
+          "glance": {
+            "type": "keyword",
+            "fields": {
+              "int": {
+                "type": "integer",
+                "ignore_malformed": true
+              }
+            }
+          },
+          "solid": {
+            "type": "keyword",
+            "fields": {
+              "int": {
+                "type": "integer",
+                "ignore_malformed": true
+              }
+            }
+          },
+          "crit": {
+            "type": "keyword",
+            "fields": {
+              "int": {
+                "type": "integer",
+                "ignore_malformed": true
+              }
+            }
+          }
+        }
+      },
+      "health": {
+        "type": "object",
+        "properties": {
+          "level_1": {
+            "type": "integer"
+          },
+          "level_2": {
+            "type": "integer"
+          },
+          "level_3": {
+            "type": "integer"
+          }
+        }
+      },
+      "gods": {
+        "type": "keyword"
+      },
+      "innate_abilities": {
+        "type": "semantic_text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "active_abilities": {
+        "type": "semantic_text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "combat_manoeuvres": {
+        "type": "semantic_text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "creature_type": {
+        "type": "keyword"
+      },
+      "bounty": {
+        "type": "keyword"
+      },
+      "tier": {
+        "type": "integer"
+      },
+      "question": {
+        "type": "semantic_text"
+      },
+      "answer": {
+        "type": "semantic_text"
+      },
+      "item_name": {
+        "type": "keyword",
+        "fields": {
+          "text": {
+            "type": "text"
+          }
+        }
+      },
+      "correction": {
+        "type": "semantic_text"
+      },
+      "source_page": {
+        "type": "keyword"
+      },
+      "cost": {
+        "type": "keyword",
+        "fields": {
+          "text": {
+            "type": "text"
+          }
+        }
+      },
+      "hero_name": {
+        "type": "keyword",
+        "fields": {
+          "text": {
+            "type": "text"
+          }
+        }
+      },
+      "hero_url": {
+        "type": "keyword"
+      },
+      "entities": {
+        "type": "nested",
+        "properties": {
+          "name": {
+            "type": "keyword"
+          },
+          "url": {
+            "type": "keyword"
+          },
+          "category": {
+            "type": "keyword"
+          }
+        }
+      },
+      "artifact_type": {
+        "type": "keyword"
+      },
+      "artifact_category": {
+        "type": "keyword"
+      },
+      "description": {
+        "type": "semantic_text"
+      }
+    }
+  }
+}
