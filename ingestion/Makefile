@@ -1,4 +1,4 @@
-.PHONY: install clean run ingest
+.PHONY: install clean run ingest connector clean-connectors
 
 install:
 	pip install -r requirements.txt
@@ -11,3 +11,9 @@ run:
 
 ingest:
 	python3 ingest.py
+
+connector:
+	cd connector && ./run_connector.sh
+
+clean-connectors:
+	cd connector && ./clean_connectors.sh

@@ -1,0 +1,12 @@
+elasticsearch:
+  host: ${elasticsearch.host}
+  api_key: ${elasticsearch.api_key}
+  ssl: ${elasticsearch.ssl}
+  log_level: ${elasticsearch.log_level}
+
+connectors:
+  - connector_id: ${connectors[0].connector_id}
+    service_type: ${connectors[0].service_type}
+
+sources:
+  hallofeternalchampions: connectors.sources.hallofeternalchampions:HallOfEternalChampionsDataSource

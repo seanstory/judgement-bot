@@ -1209,10 +1209,16 @@ class HallOfEternalChampionsClient:
         self._errata_documents = []
 
         # Create crawler
+        # Note: --no-sandbox is required because Docker containers run as root by default,
+        # and Chromium refuses to run as root without this flag
         crawler = PlaywrightCrawler(
             max_requests_per_crawl=1000,  # Reasonable limit
             request_handler=self._create_request_handler(),
             headless=True,
+            browser_type='chromium',
+            browser_launch_options={
+                'args': ['--no-sandbox', '--disable-setuid-sandbox']
+            },
         )
 
         # Start with all category list pages

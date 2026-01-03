@@ -1,0 +1,15 @@
+services:
+  elastic-connectors:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: /app/bin/elastic-ingest -c /app/config.yml
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      - "elasticsearch.host=${ELASTICSEARCH_URL}"
+      - "elasticsearch.api_key=${ELASTICSEARCH_API_KEY}"
+      - "elasticsearch.ssl=true"
+      - "elasticsearch.log_level=WARNING"
+      - "connectors[0].connector_id=${CONNECTOR_ID}"
+      - "connectors[0].service_type=hallofeternalchampions"

@@ -1,0 +1,9 @@
+docker-compose.yml
+Dockerfile
+.dockerignore
+run_connector.sh
+*.md
+__pycache__
+*.pyc
+.git
+.env

@@ -1,0 +1,1 @@
+crawlee[playwright]==1.2.1
