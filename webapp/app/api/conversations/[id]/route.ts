@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getConversation, deleteConversation } from "@/lib/kibana-client";
+import { getOrCreateSessionId, ownsConversation } from "@/lib/session";
 
 export async function GET(
   request: NextRequest,
@@ -7,6 +8,16 @@ export async function GET(
 ) {
   try {
     const { id } = await params;
+    const sessionId = await getOrCreateSessionId();
+
+    // Check ownership
+    if (!ownsConversation(id, sessionId)) {
+      return NextResponse.json(
+        { error: "Conversation not found" },
+        { status: 404 }
+      );
+    }
+
     const conversation = await getConversation(id);
     return NextResponse.json(conversation);
   } catch (error) {
@@ -29,6 +40,16 @@ export async function DELETE(
 ) {
   try {
     const { id } = await params;
+    const sessionId = await getOrCreateSessionId();
+
+    // Check ownership
+    if (!ownsConversation(id, sessionId)) {
+      return NextResponse.json(
+        { error: "Conversation not found" },
+        { status: 404 }
+      );
+    }
+
     await deleteConversation(id);
     return NextResponse.json({ success: true });
   } catch (error) {

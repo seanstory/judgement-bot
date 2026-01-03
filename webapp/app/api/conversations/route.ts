@@ -1,10 +1,16 @@
 import { NextResponse } from "next/server";
 import { getConversations } from "@/lib/kibana-client";
+import { getOrCreateSessionId, getConversationsBySession } from "@/lib/session";
 
 export async function GET() {
   try {
-    const conversations = await getConversations();
-    return NextResponse.json(conversations);
+    const sessionId = await getOrCreateSessionId();
+    const allConversations = await getConversations();
+
+    // Filter to only conversations owned by this session
+    const userConversations = getConversationsBySession(sessionId, allConversations);
+
+    return NextResponse.json(userConversations);
   } catch (error) {
     console.error("Conversations API error:", error);
     return NextResponse.json(
