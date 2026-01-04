@@ -39,13 +39,16 @@ echo -e "${YELLOW}Step 1: Creating new index ${NEW_INDEX}${NC}"
 MAPPING=$(cat hallofeternalchampions/elasticsearch_mapping.json)
 
 # Create index with mapping
-curl -X PUT "${ELASTICSEARCH_URL}/${NEW_INDEX}" \
+CREATE_RESPONSE=$(curl -X PUT "${ELASTICSEARCH_URL}/${NEW_INDEX}" \
   -H "Authorization: ApiKey ${ELASTICSEARCH_API_KEY}" \
   -H "Content-Type: application/json" \
   -d "${MAPPING}" \
-  --fail --silent --show-error | jq '.'
+  --fail --silent --show-error)
 
-if [ $? -ne 0 ]; then
+CREATE_EXIT_CODE=$?
+echo "$CREATE_RESPONSE" | jq '.'
+
+if [ $CREATE_EXIT_CODE -ne 0 ]; then
     echo -e "${RED}Failed to create index${NC}"
     exit 1
 fi
@@ -56,13 +59,26 @@ echo ""
 echo -e "${YELLOW}Step 2: Stopping any running containers${NC}"
 docker-compose down 2>/dev/null || true
 
-echo -e "${YELLOW}Building Docker image${NC}"
-docker-compose build --no-cache
+# Check if base image exists, build it if not
+if ! docker image inspect judgement-connector-base:latest >/dev/null 2>&1; then
+    echo -e "${YELLOW}Base image not found. Building base image (this is slow but only happens once)...${NC}"
+    docker build -f Dockerfile.base -t judgement-connector-base:latest .
+    if [ $? -ne 0 ]; then
+        echo -e "${RED}Failed to build base Docker image${NC}"
+        exit 1
+    fi
+    echo -e "${GREEN}Base image built successfully${NC}"
+else
+    echo -e "${GREEN}Using existing base image${NC}"
+fi
+
+echo -e "${YELLOW}Building connector image (fast, using cached base)${NC}"
+docker-compose build
 if [ $? -ne 0 ]; then
-    echo -e "${RED}Failed to build Docker image${NC}"
+    echo -e "${RED}Failed to build connector image${NC}"
     exit 1
 fi
-echo -e "${GREEN}Docker image built successfully${NC}"
+echo -e "${GREEN}Connector image built successfully${NC}"
 echo ""
 
 # Step 3: Delete all pending sync jobs
@@ -87,7 +103,8 @@ UPDATE_RESPONSE=$(curl -X POST "${ELASTICSEARCH_URL}/.elastic-connectors/_update
   -H "Content-Type: application/json" \
   -d "{
     \"doc\": {
-      \"index_name\": \"${NEW_INDEX}\"
+      \"index_name\": \"${NEW_INDEX}\",
+      \"status\": \"configured\"
     }
   }" \
   --fail --silent --show-error)
@@ -102,9 +119,12 @@ echo "$UPDATE_RESPONSE" | jq '.'
 
 # Verify the update
 sleep 2
-CURRENT_INDEX=$(curl -s -X GET "${ELASTICSEARCH_URL}/.elastic-connectors/_doc/${CONNECTOR_ID}" \
+CONNECTOR_DOC=$(curl -s -X GET "${ELASTICSEARCH_URL}/.elastic-connectors/_doc/${CONNECTOR_ID}" \
   -H "Authorization: ApiKey ${ELASTICSEARCH_API_KEY}" \
-  -H "Content-Type: application/json" | jq -r '._source.index_name')
+  -H "Content-Type: application/json")
+
+CURRENT_INDEX=$(echo "$CONNECTOR_DOC" | jq -r '._source.index_name')
+CURRENT_STATUS=$(echo "$CONNECTOR_DOC" | jq -r '._source.status')
 
 if [ "$CURRENT_INDEX" != "$NEW_INDEX" ]; then
     echo -e "${RED}Connector index_name verification failed!${NC}"
@@ -113,7 +133,14 @@ if [ "$CURRENT_INDEX" != "$NEW_INDEX" ]; then
     exit 1
 fi
 
-echo -e "${GREEN}Connector configuration updated and verified: ${NEW_INDEX}${NC}"
+if [ "$CURRENT_STATUS" != "configured" ]; then
+    echo -e "${RED}Connector status verification failed!${NC}"
+    echo -e "${RED}Expected: configured${NC}"
+    echo -e "${RED}Got: ${CURRENT_STATUS}${NC}"
+    exit 1
+fi
+
+echo -e "${GREEN}Connector configuration updated and verified: ${NEW_INDEX} (status: ${CURRENT_STATUS})${NC}"
 echo ""
 
 # Step 5: Create sync job using Connector API

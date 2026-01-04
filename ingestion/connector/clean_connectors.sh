@@ -11,7 +11,26 @@ GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 NC='\033[0m' # No Color
 
-echo -e "${YELLOW}Cleaning up connector indices...${NC}"
+echo -e "${YELLOW}Cleaning up connector resources...${NC}"
+echo ""
+
+# Step 1: Delete all pending sync jobs
+echo -e "${YELLOW}Step 1: Deleting pending sync jobs${NC}"
+DELETE_JOBS_RESPONSE=$(curl -s -X POST "${ELASTICSEARCH_URL}/.elastic-connectors-sync-jobs/_delete_by_query" \
+  -H "Authorization: ApiKey ${ELASTICSEARCH_API_KEY}" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "query": {
+      "match_all": {}
+    }
+  }')
+
+DELETED_JOBS=$(echo "$DELETE_JOBS_RESPONSE" | jq -r '.deleted // 0')
+echo -e "${GREEN}Deleted ${DELETED_JOBS} pending sync jobs${NC}"
+echo ""
+
+# Step 2: Clean up connector indices
+echo -e "${YELLOW}Step 2: Cleaning up connector indices${NC}"
 
 # Get the base pattern without the wildcard
 BASE_PATTERN="${CONNECTOR_INDEX_PATTERN%\*}"

@@ -3,6 +3,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        BASE_IMAGE: judgement-connector-base:latest
+    image: judgement-connector:latest
     command: /app/bin/elastic-ingest -c /app/config.yml
     extra_hosts:
       - "host.docker.internal:host-gateway"

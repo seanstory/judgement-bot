@@ -1,11 +1,20 @@
 {
   "mappings": {
+    "_meta": {
+      "description": "Judgement: Eternal Champions game data from the Hall of Eternal Champions. Contains character data (heroes, monsters, summons), game mechanics (abilities, combat manoeuvres, conditions, definitions), items (artefacts), faction information (gods/tribes), and community resources (FAQs, errata). Heroes and creatures have combat attributes (MOV, MEL, RNG, MAG, AGI, RES, SH) and weapon profiles. Abilities are linked to their entities via the entities field. Artefacts categorized by type (Offensive/Defensive) and category (General/Sacred/Monster)."
+    },
     "properties": {
       "_timestamp": {
-        "type": "date"
+        "type": "date",
+        "meta": {
+          "hint": "When the document was indexed/updated"
+        }
       },
       "url": {
-        "type": "keyword"
+        "type": "keyword",
+        "meta": {
+          "hint": "Source URL from hallofeternalchampions.com"
+        }
       },
       "title": {
         "type": "semantic_text",
@@ -14,16 +23,28 @@
             "type": "keyword",
             "ignore_above": 256
           }
+        },
+        "meta": {
+          "hint": "Name of entity, ability, or page"
         }
       },
       "img_url": {
-        "type": "keyword"
+        "type": "keyword",
+        "meta": {
+          "hint": "Portrait/avatar image URL"
+        }
       },
       "text": {
-        "type": "semantic_text"
+        "type": "semantic_text",
+        "meta": {
+          "hint": "Full text content including all descriptions"
+        }
       },
       "category": {
-        "type": "keyword"
+        "type": "keyword",
+        "meta": {
+          "hint": "Document type: hero, monster, god, ability, etc."
+        }
       },
       "attributes": {
         "properties": {
@@ -34,6 +55,9 @@
                 "type": "integer",
                 "ignore_malformed": true
               }
+            },
+            "meta": {
+              "hint": "Movement range (e.g., '3', 'D3' for dice roll)"
             }
           },
           "MEL": {
@@ -43,6 +67,9 @@
                 "type": "integer",
                 "ignore_malformed": true
               }
+            },
+            "meta": {
+              "hint": "Melee attack value, compared vs target's AGI"
             }
           },
           "RNG": {
@@ -52,6 +79,9 @@
                 "type": "integer",
                 "ignore_malformed": true
               }
+            },
+            "meta": {
+              "hint": "Ranged attack value, compared vs target's AGI"
             }
           },
           "MAG": {
@@ -61,6 +91,9 @@
                 "type": "integer",
                 "ignore_malformed": true
               }
+            },
+            "meta": {
+              "hint": "Magical attack value, compared vs target's AGI"
             }
           },
           "AGI": {
@@ -70,6 +103,9 @@
                 "type": "integer",
                 "ignore_malformed": true
               }
+            },
+            "meta": {
+              "hint": "Agility. Defense vs MEL/RNG/MAG attacks"
             }
           },
           "RES": {
@@ -79,6 +115,9 @@
                 "type": "integer",
                 "ignore_malformed": true
               }
+            },
+            "meta": {
+              "hint": "Resistance. How much damage is 'ignored.'"
             }
           },
           "SH": {
@@ -88,36 +127,63 @@
                 "type": "integer",
                 "ignore_malformed": true
               }
+            },
+            "meta": {
+              "hint": "Soul Harvest: DC12 vs 2D6+SH"
             }
           }
         }
       },
       "champions": {
-        "type": "keyword"
+        "type": "keyword",
+        "meta": {
+          "hint": "Hero names belonging to this god/tribe"
+        }
       },
       "avatars": {
-        "type": "keyword"
+        "type": "keyword",
+        "meta": {
+          "hint": "Avatars for this god/tribe"
+        }
       },
       "divine_attributes": {
-        "type": "keyword"
+        "type": "keyword",
+        "meta": {
+          "hint": "God/tribe traits (e.g., Magic, Unity)"
+        }
       },
       "difficulty": {
-        "type": "keyword"
+        "type": "keyword",
+        "meta": {
+          "hint": "Hero difficulty: Easy, Medium, Hard"
+        }
       },
       "classes": {
-        "type": "keyword"
+        "type": "keyword",
+        "meta": {
+          "hint": "Controller, Bruiser, Tank, Shooter, etc."
+        }
       },
       "weapons": {
         "type": "nested",
         "properties": {
           "name": {
-            "type": "keyword"
+            "type": "keyword",
+            "meta": {
+              "hint": "Weapon name (e.g., 'Scythe', 'Fist', 'Bow')"
+            }
           },
           "type": {
-            "type": "keyword"
+            "type": "keyword",
+            "meta": {
+              "hint": "MEL (melee), RNG (ranged), or MAG (magical)"
+            }
           },
           "cost": {
-            "type": "keyword"
+            "type": "keyword",
+            "meta": {
+              "hint": "Action Point cost (e.g., '1AP', '2AP')"
+            }
           },
           "reach": {
             "type": "keyword",
@@ -126,6 +192,9 @@
                 "type": "integer",
                 "ignore_malformed": true
               }
+            },
+            "meta": {
+              "hint": "Attack range in hexes (e.g., '1', '2', '4-8')"
             }
           },
           "glance": {
@@ -135,6 +204,9 @@
                 "type": "integer",
                 "ignore_malformed": true
               }
+            },
+            "meta": {
+              "hint": "Damage on partial hit (one die rolled 'hit')"
             }
           },
           "solid": {
@@ -144,6 +216,9 @@
                 "type": "integer",
                 "ignore_malformed": true
               }
+            },
+            "meta": {
+              "hint": "Damage on good hit (two dice rolled 'hit')"
             }
           },
           "crit": {
@@ -153,6 +228,9 @@
                 "type": "integer",
                 "ignore_malformed": true
               }
+            },
+            "meta": {
+              "hint": "Damage on critical (attack beats def by 5+)"
             }
           }
         }
@@ -161,18 +239,30 @@
         "type": "object",
         "properties": {
           "level_1": {
-            "type": "integer"
+            "type": "integer",
+            "meta": {
+              "hint": "HP at level 1"
+            }
           },
           "level_2": {
-            "type": "integer"
+            "type": "integer",
+            "meta": {
+              "hint": "HP at level 2"
+            }
           },
           "level_3": {
-            "type": "integer"
+            "type": "integer",
+            "meta": {
+              "hint": "HP at level 3"
+            }
           }
         }
       },
       "gods": {
-        "type": "keyword"
+        "type": "keyword",
+        "meta": {
+          "hint": "Gods/tribes this hero can champion"
+        }
       },
       "innate_abilities": {
         "type": "semantic_text",
@@ -181,6 +271,9 @@
             "type": "keyword",
             "ignore_above": 256
           }
+        },
+        "meta": {
+          "hint": "Passive abilities (heroes/monsters/summons)"
         }
       },
       "active_abilities": {
@@ -190,6 +283,9 @@
             "type": "keyword",
             "ignore_above": 256
           }
+        },
+        "meta": {
+          "hint": "Activated abilities with costs (heroes/monsters)"
         }
       },
       "combat_manoeuvres": {
@@ -199,22 +295,40 @@
             "type": "keyword",
             "ignore_above": 256
           }
+        },
+        "meta": {
+          "hint": "Special combat moves requiring soul tokens"
         }
       },
       "creature_type": {
-        "type": "keyword"
+        "type": "keyword",
+        "meta": {
+          "hint": "Monster subtype (e.g., 'Demon', 'Abomination')"
+        }
       },
       "bounty": {
-        "type": "keyword"
+        "type": "keyword",
+        "meta": {
+          "hint": "Reward for killing monster (e.g., '1 Fate')"
+        }
       },
       "tier": {
-        "type": "integer"
+        "type": "integer",
+        "meta": {
+          "hint": "Monster tier/difficulty level (1-3)"
+        }
       },
       "question": {
-        "type": "semantic_text"
+        "type": "semantic_text",
+        "meta": {
+          "hint": "FAQ question text"
+        }
       },
       "answer": {
-        "type": "semantic_text"
+        "type": "semantic_text",
+        "meta": {
+          "hint": "FAQ answer text"
+        }
       },
       "item_name": {
         "type": "keyword",
@@ -222,13 +336,22 @@
           "text": {
             "type": "text"
           }
+        },
+        "meta": {
+          "hint": "Item referenced in erratum"
         }
       },
       "correction": {
-        "type": "semantic_text"
+        "type": "semantic_text",
+        "meta": {
+          "hint": "Erratum correction details"
+        }
       },
       "source_page": {
-        "type": "keyword"
+        "type": "keyword",
+        "meta": {
+          "hint": "Source page for definitions/conditions/FAQs"
+        }
       },
       "cost": {
         "type": "keyword",
@@ -236,6 +359,9 @@
           "text": {
             "type": "text"
           }
+        },
+        "meta": {
+          "hint": "Cost (e.g., 1AP, 2 Fate, 1AP+1F)"
         }
       },
       "hero_name": {
@@ -244,33 +370,57 @@
           "text": {
             "type": "text"
           }
+        },
+        "meta": {
+          "hint": "Hero name (mirrors title for heroes)"
         }
       },
       "hero_url": {
-        "type": "keyword"
+        "type": "keyword",
+        "meta": {
+          "hint": "URL to hero page (for cross-referencing)"
+        }
       },
       "entities": {
         "type": "nested",
         "properties": {
           "name": {
-            "type": "keyword"
+            "type": "keyword",
+            "meta": {
+              "hint": "Hero/monster name that has this ability"
+            }
           },
           "url": {
-            "type": "keyword"
+            "type": "keyword",
+            "meta": {
+              "hint": "URL to hero/monster page"
+            }
           },
           "category": {
-            "type": "keyword"
+            "type": "keyword",
+            "meta": {
+              "hint": "Entity type: hero, monster, summon"
+            }
           }
         }
       },
       "artifact_type": {
-        "type": "keyword"
+        "type": "keyword",
+        "meta": {
+          "hint": "Offensive or Defensive"
+        }
       },
       "artifact_category": {
-        "type": "keyword"
+        "type": "keyword",
+        "meta": {
+          "hint": "General, Sacred, or Monster"
+        }
       },
       "description": {
-        "type": "semantic_text"
+        "type": "semantic_text",
+        "meta": {
+          "hint": "Artefact effect description"
+        }
       }
     }
   }

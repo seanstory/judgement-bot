@@ -1,0 +1,41 @@
+FROM docker.elastic.co/integrations/elastic-connectors:9.4.0-SNAPSHOT
+
+# Pre-install common dependencies that don't change often
+# This layer will be cached even when connector code changes
+RUN /app/bin/pip install --no-cache-dir \
+    playwright \
+    beautifulsoup4 \
+    lxml
+
+# Install Chromium system dependencies from Chainguard repos
+# This is the slowest part of the build, so we do it in the base image
+RUN apk update && apk add --no-cache \
+    libnspr \
+    libnss \
+    glib \
+    libx11 \
+    libxcomposite \
+    libxdamage \
+    libxext \
+    libxfixes \
+    libxrandr \
+    mesa-gbm \
+    alsa-lib \
+    at-spi2-core \
+    libatk-1.0 \
+    libatk-bridge-2.0 \
+    cairo \
+    cups-libs \
+    dbus-libs \
+    expat \
+    libdrm \
+    libxcb \
+    libxkbcommon \
+    pango \
+    freetype \
+    harfbuzz \
+    libudev
+
+# Install Playwright browsers
+# This downloads chromium, which is also slow
+RUN /app/bin/playwright install chromium
